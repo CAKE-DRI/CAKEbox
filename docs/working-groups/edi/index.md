@@ -3,14 +3,43 @@ title: CAKE-CoSeC EDI Working Group
 tags: [edi]
 ---
 
-Welcome... 
+# CAKE-CoSeC EDI Working Group
 
-## [Terms of Reference](terms-of-reference.md)
+Welcome to the page for the **CAKE-CoSeC Equality, Diversity, and Inclusion (EDI) Working Group** — a collaborative initiative between the **Computational Abilities Knowledge Exchange (CAKE)** and the **Computational Science Centre for Research Communities (CoSeC)**.
 
-[View ToR](terms-of-reference.md)
+Our goal is to support inclusive and equitable practices across the CAKE and CoSeC communities by listening, learning, and taking action.
 
-## Community Request List
-Have something you need help with? [Submit a request for the committee to discuss](request-list.md)
+---
 
-## Meeting Minutes
-- [4th July 2025](minutes/2025-07-04.md)
+## 📄 Terms of Reference
+Learn more about the structure, objectives, and responsibilities of the working group:  
+👉 [CAKE-CoSeC EDI WG Terms of Reference](terms-of-reference.md)
+
+---
+
+## 💬 Community Request List
+Have something you'd like the EDI Working Group to consider?
+
+👉 [Submit a request or concern](request-list.md)
+
+This may include:
+- Barriers to inclusion in your project or team
+- Ideas for improving accessibility or diversity
+- Suggestions for new initiatives
+- Issues you’ve experienced or observed
+
+All submissions are treated with care and respect.
+
+---
+
+## 📝 Meeting Minutes
+
+Stay informed with the latest discussions and decisions from our meetings:
+
+- [Minutes Template](minutes/minutes-template.md)
+- [25 July 2025](minutes/2025-07-25.md)
+- [4 July 2025](minutes/2025-07-04.md)
+
+---
+
+For any questions or feedback, feel free to reach out to the EDI WG coordinators.

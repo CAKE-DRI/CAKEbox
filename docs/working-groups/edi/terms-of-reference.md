@@ -17,6 +17,7 @@ Creating spaces where all individuals feel welcomed, respected and valued. Inclu
 
 ## Objectives 
 The CAKE-CoSeC EDI working group will work to embed equality, diversity and inclusion across all CAKE and CoSeC activities by: 
+
 * Collecting, developing, and disseminating best practices for EDI across all operational areas including communication, recruitment, research, training, and event organisation.
 * Representing diverse voices, with a focus on acknowledging and responding to their varying needs and contexts.
 * Identifying barriers to inclusion and developing actionable strategies to address them.
@@ -25,6 +26,7 @@ The CAKE-CoSeC EDI working group will work to embed equality, diversity and incl
 
 ## Scope
 The CAKE-CoSeC EDI working group’s scope includes:
+
 * CAKE-related activities, with a focus on knowledge exchange across UK DRI, collaboration, and delivery of CAKE’s EDI objectives.
 * CoSeC-related activities, including those of the Collaborative Computational Projects (CCPs) and High-End Computing (HEC) communities supported by CoSeC.
 
