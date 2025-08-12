@@ -1,5 +1,15 @@
 site_name: CAKEbox
-# site_url: 
+repo_url: https://github.com/CAKE-DRI/CAKEbox
+repo_name: CAKE-DRI/CAKEbox
+edit_uri: edit/main/docs/
+extra:
+  social:
+    - icon: fontawesome/brands/font-awesome
+      link: https://cake-dri.github.io/
+    - icon: fontawesome/brands/github
+      link: https://github.com/CAKE_DRI
+    - icon: fontawesome/brands/slack
+      link: https://join.slack.com/t/cake-dri/shared_invite/zt-3b6dgtkfp-kDnlCOXOl9QJrg0L7tVKNw
 
 nav:
   - Home: index.md
