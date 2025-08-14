@@ -8,7 +8,7 @@ The knowledge hub for the **Computational Abilities Knowledge Exchange (CAKE)** 
 
 Browse around, explore content [tags](tags.md) or use the search box to quickly find what you need! 
 
-See something missing? Want to share your own resources? Please contribute — your input helps grow the CAKE community. 
+See something missing? Want to share your own resources? [Please contribute](https://github.com/CAKE-DRI/CAKEbox) — your input helps grow the CAKE community. 
 
 ## What you can find here: 
   - :hammer_and_pick: [How To Guides](how-to/index.md) - curated advice, tips and best practices draw from real-world experiences across the community. 
