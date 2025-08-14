@@ -44,8 +44,3 @@ Submissions and discussions during the review process are confidential. Do not s
 
 ## Supporting Documents: 
 * [CAKE Code of Conduct](../code-of-conduct.md)
-
-## Document Version 
-| Version | Date | 
-| --- | --- | 
-| 1 | 13/08/25 | 

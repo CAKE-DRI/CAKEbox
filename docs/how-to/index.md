@@ -11,3 +11,4 @@ Here you’ll find step-by-step how-to guides alongside best practice advice, he
 ## Available guides:
 
 * [How to Review](how-to-review.md) – Guidance on assessing applications fairly, consistently, and constructively.
+* [Best Practices for Successful Placements and Visits](how-to-placement-and-visit.md)
