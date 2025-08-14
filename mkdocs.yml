@@ -21,8 +21,9 @@ theme:
   name: material
   palette: 
     scheme: default
-    primary: indigo
-    accent: indigo
+    primary: custom
+    # primary: indigo
+    # accent: indigo
   font: 
     text: Nova Square
   
@@ -32,9 +33,13 @@ theme:
     - content.code.copy
     - content.action.edit
     - tags
+
+extra_css:
+  - stylesheets/cake.css
     
 plugins:
   - search
+  - git-revision-date
   - tags:
       tags_file: tags.md
 
@@ -44,37 +49,3 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 # https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/
-
-#   docs/
-# ├── index.md
-# ├── about.md
-# ├── contribute.md
-# ├── tags.md
-# ├── how-to/
-# ├── working-groups/
-# │   ├── edi/
-# │   └── reviewers/
-# ├── templates/
-# ├── examples/
-
-  # - How-To Guides:
-  #     - Inclusive Recruitment: how-to/inclusive-recruitment.md
-  #     - Onboarding: how-to/onboarding.md
-  #     - Writing a Proposal: how-to/write-proposal.md
-  #     - Running Inclusive Events: how-to/inclusive-events.md
-  #     - Mentoring Programme: how-to/run-mentoring-programme.md
-  # - Working Groups:
-  #     - Overview: working-groups/index.md
-  #     - EDI:
-  #         - Terms of Reference: working-groups/edi/terms-of-reference.md
-  #         - Minutes: working-groups/edi/minutes.md
-  #         - Request List: working-groups/edi/request-list.md
-  #     - Reviewing:
-  #         - Reviewer ToR: working-groups/reviewers/terms-of-reference.md
-  #         - Meeting Notes: working-groups/reviewers/minutes.md
-  # - Templates:
-  #     - ToR Template: templates/terms-of-reference-template.md
-  #     - Code of Conduct Template: templates/code-of-conduct-template.md
-  # - Examples:
-  #     - Successful Placement: examples/successful-placement.md
-  #     - Inclusive Review Case Study: examples/inclusive-review-example.md
