@@ -1,10 +1,17 @@
 ---
-title: 
+title:
 tags: 
 ---
 
-## Welcome to CAKEbox!
-The knowledge hub for the **Computational Abilities Knowledge Exchange (CAKE)** :cake: Project - a central place for the UK Digital Research Infrastructure (DRI) community to exchange knowledge, share best practices and reuse templates. 
+#<p align="center">Welcome to CAKEbox!</p>
+
+<p align="center">
+  <img src="images/CAKE_logo1.png" alt="CAKE logo" width="200"/>
+</p>
+
+The knowledge hub for the **Computational Abilities Knowledge Exchange (CAKE)** :cake: Project!
+
+This is a central place for the UK Digital Research Infrastructure (DRI) community to exchange knowledge, share best practices and reuse templates. 
 
 Browse around, explore content [tags](tags.md) or use the search box to quickly find what you need! 
 
