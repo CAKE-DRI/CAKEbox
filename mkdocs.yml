@@ -25,7 +25,9 @@ theme:
     # primary: indigo
     # accent: indigo
   font: 
-    text: Nova Square
+    text: Ubuntu
+  favicon: images/cake-logo.ico
+  logo: images/CAKE_logo1_wht.png
   
   features:
     - navigation.tabs
