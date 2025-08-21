@@ -22,11 +22,9 @@ theme:
   palette: 
     scheme: default
     primary: custom
-    # primary: indigo
-    # accent: indigo
   font: 
     text: Ubuntu
-  favicon: images/cake-logo.ico
+  favicon: images/favicon.ico
   logo: images/CAKE_logo1_wht.png
   
   features:
