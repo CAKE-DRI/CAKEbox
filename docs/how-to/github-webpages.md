@@ -31,6 +31,6 @@ For this,
 - Select the webpage's main as base
 - Pick your own copy instead of compare:main
 - Pick Create pull request
-- 
+- Feel free to give it a title and confirm your request by clicking on Create pull request once again
 
-compare
+
