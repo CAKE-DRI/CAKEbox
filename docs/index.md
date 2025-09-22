@@ -3,7 +3,7 @@ title:
 tags: 
 ---
 
-#<p align="center">Welcome to CAKEbox!</p>
+<p align="center">Welcome to CAKEbox!</p>
 
 <p align="center">
   <img src="images/CAKE_logo1.png" alt="CAKE logo" width="200"/>
