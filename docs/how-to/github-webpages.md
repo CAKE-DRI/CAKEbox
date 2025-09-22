@@ -14,7 +14,8 @@ Most people will prefer to use git access directly, but sometimes a quick change
 
 ## Edit a file
 
-- Pick the file you want to alter
+- Select your project of interest
+- Navigate to the file you want to alter
 - Click on the pen the right top which says "Edit"
 - Make your changes
 - If this is the first time you alter something, it will ask if you want to create a branch or fork. This is your private copy
