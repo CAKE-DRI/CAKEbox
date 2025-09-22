@@ -9,7 +9,7 @@ Most people will prefer to use git access directly, but sometimes a quick change
 
 - Create an account at github.com;
 - Log into github;
-- At the left, type in your repository name into the **Find a repository...** field. This has to be the github.io URL. If you want to alter CAKE for example, you have to type in cake-dri.github.io, i.e., the URL without the leading https::;
+- At the left, type in your repository name into the **Find a repository...** field. This has to be the github.io URL. If you want to alter CAKE for example, you have to type in cake-dri.github.io, i.e., the URL without the leading ``https::``;
 - From hereon, this repository should always show up on the left every time you log in.
 
 ## Edit a file
@@ -34,4 +34,7 @@ For this,
 - Pick Create pull request;
 - Feel free to give it a title and confirm your request by clicking on Create pull request once again.
 
+## Further reading
 
+Most pages on github.io use Markdown syntax - although you can also use HTML. 
+A good resource to learn more about Markdown is https://www.markdownguide.org/getting-started.
