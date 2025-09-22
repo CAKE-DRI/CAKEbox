@@ -19,7 +19,7 @@ Most people will prefer to use git access directly, but sometimes a quick change
 - Make your changes
 - If this is the first time you alter something, it will ask if you want to create a branch or fork. This is your private copy
 
-  All your changes will end up in your branch/fork. They will not (yet) be on the webpage, so you can play around with your changes. Everytime you make a change and you are happy with it, klick on Commit changes ... to submit the changes to your local copy.
+All your changes will end up in your branch/fork. They will not (yet) be on the webpage, so you can play around with your changes. Everytime you make a change and you are happy with it, klick on Commit changes ... to submit the changes to your local copy.
 
 ## Upload changes to the website
 
