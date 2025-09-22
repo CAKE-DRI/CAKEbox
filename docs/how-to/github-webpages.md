@@ -1,8 +1,8 @@
 # Very high level to alter something on a github.io webpage
 
 This guide provides some very high-level instructions of how to make changes to github.io webpages using only the browser.
-Most people will prefer to use git access directly, but sometimes a quick change through the web is what you want.
 The CAKEbox is using this technology, but also [CAKE itself](https://cake.ac.uk) or [SHAREing](https://shareing-dri.github.io/).
+Most people will prefer to use git access directly, but sometimes a quick change through the web is what you want.
 
 
 ## First time
