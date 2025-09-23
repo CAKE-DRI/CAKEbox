@@ -23,10 +23,11 @@ Have something you'd like the EDI Working Group to consider?
 👉 [Submit a request or concern](request-list.md)
 
 This may include:
-- Barriers to inclusion in your project or team
-- Ideas for improving accessibility or diversity
-- Suggestions for new initiatives
-- Issues you’ve experienced or observed
+
+* Barriers to inclusion in your project or team
+* Ideas for improving accessibility or diversity
+* Suggestions for new initiatives
+* Issues you’ve experienced or observed
 
 All submissions are treated with care and respect.
 
@@ -37,8 +38,7 @@ All submissions are treated with care and respect.
 Stay informed with the latest discussions and decisions from our meetings:
 
 - [Minutes Template](minutes/minutes-template.md)
-- [25 July 2025](minutes/2025-07-25.md)
-- [4 July 2025](minutes/2025-07-04.md)
+<!-- - [03/10/2025](minutes/25-10-03.md) -->
 
 ---
 
