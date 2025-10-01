@@ -126,7 +126,7 @@ The CAKE-CoSeC EDI working group will publish updates, recommendations, and outp
 
 ## Ethics
 ### Code of Conduct
-* All Chair(s) and Members are expected to follow the CAKE Code of Conduct: [https://cake-dri.github.io/code-of-conduct/](https://cake-dri.github.io/code-of-conduct/)
+* All Chair(s) and Members are expected to follow the CAKE Code of Conduct: [https://www.cake.ac.uk/CAKEbox/code-of-conduct/](https://www.cake.ac.uk/CAKEbox/code-of-conduct/)
 * In summary, Chair(s) and Members should act with respect, professionalism, and integrity at all times. Discriminatory, harassing, or exclusionary behaviour will not be tolerated. Chair(s) and Members are expected to foster a supportive, inclusive environment where all voices are heard and valued. 
  
 ### Conflict of Interest Disclosure: 

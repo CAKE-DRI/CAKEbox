@@ -14,3 +14,5 @@ There is also a [Resources Page](how-to-resources) which links to useful materia
 
 * [How to Review](how-to-review.md) – Guidance on assessing applications fairly, consistently, and constructively.
 * [Best Practices for Successful Placements and Visits](how-to-placement-and-visit.md)
+* [GitHub.io pages - quick start](github-webpages.md)
+    
