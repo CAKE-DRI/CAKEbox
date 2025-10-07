@@ -1,30 +1,17 @@
+!!! question "Public Summary of Minutes Template" 
+
+    In order to encourage transparency and to build a group that benefits the wider community, we share summarised versions of our meeting minutes on the CAKE-CoSeC EDI Working Group public website.
+
+    When preparing these summaries, please ensure discussions are anonymised - providing a high-level overview of topics and actions but removing individual names or group-specific details.
+
+
 # Date 
-
-**Attendees:** [List attendees]  
-**Apologies:** [List apologies]
-
----
 
 ## Agenda
 - [Agenda item 1]  
 - [Agenda item 2]  
 - [Agenda item 3]  
 - ...  
-
----
-
-## Actions
-
-### Arising
-- **ACTION:** ([Name]) [Describe new action from this meeting]  
-- **ACTION:** ([Name or All]) [Describe action]  
-
-### Ongoing: 
-- **ACTION:** ([Name]) [Describe ongoing action]  
-
-### Completed: 
-- **ACTION:** ([Name]) [Describe completed action]  
-  - [add notes if needed]
 
 ---
 
