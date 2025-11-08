@@ -38,6 +38,7 @@ All submissions are treated with care and respect.
 We are posting summaries of all of our meetings! Stay informed with the latest discussions and decisions:
 
 - [Minutes Template](minutes/minutes-template.md)
+- [07/11/2025](minutes/25-11-07.md)
 - [03/10/2025](minutes/25-10-03.md)
 
 ---
