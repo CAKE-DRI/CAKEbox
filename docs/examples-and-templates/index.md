@@ -11,10 +11,10 @@ Welcome to our collection of practical examples and ready-to-use templates. Thes
 ## Templates:
 
 * [Recording meeting minutes](template-meeting-minutes.md) – A structured template for recording discussions, decisions, and action points during meetings.
-* <a href="https://www.cake.ac.uk/CAKEbox/docs/examples-and-templates/Outreach-Documentation.pdf" target="_blank">Documenting an interactive outreach activity</a>
+* <a href="https://www.cake.ac.uk/CAKEbox/examples-and-templates/Outreach-Documentation.pdf" target="_blank">Documenting an interactive outreach activity</a>
 
 ## Examples: 
-* <a href="https://www.cake.ac.uk/CAKEbox/docs/examples-and-templates/ParallelSort-Outreach.pdf" target="_blank">Documenting EPCC's Parallel Sort Outreach Activity</a>
+* <a href="https://www.cake.ac.uk/CAKEbox/examples-and-templates/ParallelSort-Outreach.pdf" target="_blank">Documenting EPCC's Parallel Sort Outreach Activity</a>
 
 
 <!-- ## Examples: Small Group Discussions 
