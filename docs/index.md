@@ -24,6 +24,17 @@ Below are the central themes that we are using to organise the resources within 
 
 CAKEbox brings together community-contributed resources designed to support you. If you have guidance, templates, reflections, or examples that others would benefit from, **[we encourage you to contribute](how-to-contribute/index.md)**.
 
+--- 
+
+## Other Hubs
+
+Check-out these great collections from communities within the UK large-scale computing landscape: 
+
+- [Software Sustainability Institute Resources Hub](https://www.software.ac.uk/resource-hub)
+    - Including information ranging from software project management and sustainability to event organisation and online training delivery.
+- [Society of Research Software Engineering Resources](https://society-rse.org/resources/)
+    - Ranging from EDIA to remote working to reproducible research     
+
 ---
 
 ## Code of Conduct 

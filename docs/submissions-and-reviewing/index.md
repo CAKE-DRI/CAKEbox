@@ -46,6 +46,8 @@ Resources that provide guidance on:
 
 <!-- material/tags {include: [Submissions & Reviewing]} -->
 
+* [UKRI's 12 top tips for writing a grant application](https://www.ukri.org/blog/12-top-tips-for-writing-a-grant-application/) 
+
 <!-- 
 To be included: 
 - How to find funding opportunities

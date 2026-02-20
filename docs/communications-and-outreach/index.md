@@ -30,6 +30,9 @@ Communications and outreach resources that support:
 <!-- material/tags {include: [Communications & Outreach]} -->
 
 
+* [Ten simple rules for scientists engaging in science communication](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011251)
+* [So, you want to reach out? Lessons from a ‘science for all’ programme](https://www.timeshighereducation.com/campus/so-you-want-reach-out-lessons-science-all-programme)
+
 ### Outreach Activities: 
 
 * <a href="https://www.cake.ac.uk/CAKEbox/examples-and-templates/Outreach-Documentation.pdf" target="_blank">Example template for documenting an interactive outreach activity</a>  

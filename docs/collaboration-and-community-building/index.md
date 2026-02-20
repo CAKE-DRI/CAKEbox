@@ -24,15 +24,15 @@ Collaboration and community building resources that support:
 - Strategies for effective communication. See **[Communications & Outreach](../communications-and-outreach/index.md)**. 
 
 ## Resources 
-<!-- material/tags {include: [Collaboration & Community Building, CAKE Placements & Visits]} -->
-
-
-<!-- To be included/described 
+<!-- material/tags {include: [Collaboration & Community Building} -->
 
 - [The Turing Way](https://book.the-turing-way.org/) - Handbook including guides for collaboration, communication and communities.
 - [Community Champions Program Guides](https://www.cscce.org/resources/community-champions-programs/) - A set of resources for running community champion programs.
 - [Effective Knowledge Exchange](https://www.ukri.org/councils/esrc/impact-toolkit-for-economic-and-social-sciences/how-to-do-effective-knowledge-exchange/)) - UKRI website about knowledge exchange.
 
+
+<!-- To be included/described:
+Technical communities to join -> that's on the website? 
 - How to write a terms of reference 
 - How to build long-lasting partnerships
 - How to conflict resolution
