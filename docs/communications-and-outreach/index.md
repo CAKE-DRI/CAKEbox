@@ -29,9 +29,9 @@ Communications and outreach resources that support:
 ## Resources
 <!-- material/tags {include: [Communications & Outreach]} -->
 
-
 * [Ten simple rules for scientists engaging in science communication](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011251)
 * [So, you want to reach out? Lessons from a ‘science for all’ programme](https://www.timeshighereducation.com/campus/so-you-want-reach-out-lessons-science-all-programme)
+
 
 ### Outreach Activities: 
 

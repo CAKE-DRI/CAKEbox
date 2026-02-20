@@ -24,7 +24,7 @@ Collaboration and community building resources that support:
 - Strategies for effective communication. See **[Communications & Outreach](../communications-and-outreach/index.md)**. 
 
 ## Resources 
-<!-- material/tags {include: [Collaboration & Community Building} -->
+<!-- material/tags {include: [Collaboration & Community Building]} -->
 
 - [The Turing Way](https://book.the-turing-way.org/) - Handbook including guides for collaboration, communication and communities.
 - [Community Champions Program Guides](https://www.cscce.org/resources/community-champions-programs/) - A set of resources for running community champion programs.
