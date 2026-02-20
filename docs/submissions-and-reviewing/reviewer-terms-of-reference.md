@@ -1,4 +1,8 @@
-# CAKE Review Committee Terms of Reference 
+---
+title: CAKE Review Committee Terms of Reference 
+tags: [Submissions & Reviewing]
+---
+
 
 This document outlines the terms of reference for the appointment and organisation of a Review Committee (RC) serving the [Computational Abilities Knowledge Exchange](https://cake-dri.github.io/) (CAKE) project.  
 
@@ -128,7 +132,7 @@ If a reviewer accepts an assignment, they will receive the full application and 
 
 Each reviewer must also provide a brief written assessment and constructive feedback to support their recommendation and assist applicant development. Reviewers are encouraged to consider the career stage of the applicant when evaluating proposals.
 
-All reviewers are expected to adhere to the [CAKE Code of Conduct](../../code-of-conduct.md) and follow the [reviewer best practice guidance](../../how-to/how-to-review.md) at all times. In summary, all reviewers are expected to adhere to the following principles:
+All reviewers are expected to adhere to the [CAKE Code of Conduct](../code-of-conduct.md) and follow the [reviewer best practice guidance](how-to-review.md) at all times. In summary, all reviewers are expected to adhere to the following principles:
 
 * Confidentiality
     * All materials and deliberations must be kept strictly confidential. No content may be shared or discussed outside the formal review process.

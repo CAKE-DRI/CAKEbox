@@ -7,21 +7,32 @@ extra:
     - icon: fontawesome/brands/font-awesome
       link: https://cake-dri.github.io/
     - icon: fontawesome/brands/github
-      link: https://github.com/CAKE_DRI
+      link: https://github.com/CAKE-DRI
     - icon: fontawesome/brands/slack
       link: https://join.slack.com/t/cake-dri/shared_invite/zt-3b6dgtkfp-kDnlCOXOl9QJrg0L7tVKNw
 
 nav:
-  - Home: index.md
-  - How To Guides: how-to/index.md
-  - Examples & Templates: examples-and-templates/index.md
-  - KE Working Groups: working-groups/index.md
+  - Welcome and Explore: index.md
+  - How to Contribute: how-to-contribute/index.md
 
 theme:
   name: material
   palette: 
-    scheme: default
-    primary: custom
+    # scheme: default
+    # primary: custom
+ # Palette toggle for light mode
+  - scheme: default
+    primary: custom 
+    toggle:
+      icon: material/weather-sunny 
+      name: Switch to dark mode
+
+  # Palette toggle for dark mode
+  - scheme: slate 
+    primary: custom 
+    toggle:
+      icon: material/weather-night
+      name: Switch to light mode
   font: 
     text: Ubuntu
   favicon: images/favicon.ico
@@ -39,9 +50,20 @@ extra_css:
     
 plugins:
   - search
-  - git-revision-date
-  - tags:
-      tags_file: tags.md
+  # - git-revision-date
+  - meta
+  - tags
+
+  # - git-revision-date-localized
+  # - git-committers
+  # - git-revision-date-localized:
+  #   enable_creation_date: true
+  #   type: date
+  
+  # - git-committers:
+  #   repository: CAKE-DRI/CAKEbox
+  #   branch: main
+    # tags_file: tags.md
 
 # https://squidfunk.github.io/mkdocs-material/reference/admonitions/
 markdown_extensions:

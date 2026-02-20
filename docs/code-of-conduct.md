@@ -1,6 +1,6 @@
 ---
 title: Code of Conduct
-tags: [edi]
+tags: [EDIA]
 ---
 
 Overview: 

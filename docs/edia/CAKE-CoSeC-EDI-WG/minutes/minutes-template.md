@@ -1,3 +1,7 @@
+---
+title: Minutes Template
+---
+
 !!! question "Public Summary of Minutes Template" 
 
     In order to encourage transparency and to build a group that benefits the wider community, we share summarised versions of our meeting minutes on the CAKE-CoSeC EDI Working Group public website.

@@ -1,3 +1,8 @@
+---
+title: Basic Template for Meeting Minutes
+tags: [Communications & Outreach]
+---
+
 # Title 
 ## Date
 
