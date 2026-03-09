@@ -36,6 +36,7 @@ All submissions are treated with care and respect. -->
 We are posting summaries of all of our meetings! Stay informed with the latest discussions and decisions:
 
 - [Minutes Template](minutes/minutes-template.md)
+- [06/03/2026](minutes/26-03-06.md)
 - [06/02/2026](minutes/26-02-06.md)
 - [09/01/2026](minutes/26-01-09.md)
 - [12/12/2025](minutes/25-12-12.md)
