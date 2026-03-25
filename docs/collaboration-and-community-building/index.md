@@ -28,7 +28,8 @@ Collaboration and community building resources that support:
 
 - [The Turing Way](https://book.the-turing-way.org/) - Handbook including guides for collaboration, communication and communities.
 - [Community Champions Program Guides](https://www.cscce.org/resources/community-champions-programs/) - A set of resources for running community champion programs.
-- [Effective Knowledge Exchange](https://www.ukri.org/councils/esrc/impact-toolkit-for-economic-and-social-sciences/how-to-do-effective-knowledge-exchange/)) - UKRI website about knowledge exchange.
+- [Effective Knowledge Exchange](https://www.ukri.org/councils/esrc/impact-toolkit-for-economic-and-social-sciences/how-to-do-effective-knowledge-exchange/) - UKRI website about knowledge exchange.
+- [KE Panel at the SSI Research Software Camp](https://www.youtube.com/watch?v=i_WHlRFKbwc) - Panel discussion on Knowledge Exchange.
 
 
 <!-- To be included/described:
