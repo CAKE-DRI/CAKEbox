@@ -1,5 +1,6 @@
 ---
 title: Minutes Template
+tags: [EDI WG Minutes]
 ---
 
 !!! question "Public Summary of Minutes Template" 
