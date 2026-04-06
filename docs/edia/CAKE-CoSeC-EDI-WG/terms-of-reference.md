@@ -1,4 +1,7 @@
-# CAKE-CoSeC EDI Working Group Terms of Reference
+---
+title: Terms of Reference
+tags: [CAKE-CoSeC Documents]
+---
 
 This document outlines the terms of reference for the organisation and delivery of an equality, diversity and inclusion (EDI) working group collaboration between the [Computational Abilities Knowledge Exchange](https://cake-dri.github.io/) (CAKE) and [Computational Science Centre for Research Communities](https://www.cosec.ac.uk/) (CoSeC) projects.
 
