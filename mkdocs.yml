@@ -14,6 +14,7 @@ extra:
 nav:
   - Welcome and Explore: index.md
   - How to Contribute: how-to-contribute/index.md
+  - All Resources: all.md 
 
 theme:
   name: material
