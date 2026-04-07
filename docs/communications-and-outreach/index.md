@@ -35,9 +35,9 @@ Communications and outreach resources that support:
 
 ### Outreach Activities: 
 
-* <a href="https://www.cake.ac.uk/CAKEbox/examples-and-templates/Outreach-Documentation.pdf" target="_blank">Example template for documenting an interactive outreach activity</a>  
+* <a href="https://www.cake.ac.uk/CAKEbox/communications-and-outreach/Outreach-Documentation.pdf" target="_blank">Example template for documenting an interactive outreach activity</a>  
   This template supports reuse and adaptation of outreach activities, allowing others to replicate or adapt activities without redesigning from scratch.
-    * <a href="https://www.cake.ac.uk/CAKEbox/examples-and-templates/ParallelSort-Outreach.pdf" target="_blank">Example of using the template: EPCC's Parallel Sort Outreach Activity</a>  
+    * <a href="https://www.cake.ac.uk/CAKEbox/communications-and-outreach/ParallelSort-Outreach.pdf" target="_blank">Example of using the template: EPCC's Parallel Sort Outreach Activity</a>  
       A worked example demonstrating how the documentation template can be applied in practice.
 
 <!-- To be included: 
