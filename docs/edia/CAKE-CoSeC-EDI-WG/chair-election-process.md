@@ -53,7 +53,7 @@ Reasonable adjustments will be made to ensure all Members can participate in the
 
 A formal call for nominations will first be circulated to all Members including:
 
-- Overview of the Chair role and responsibilities  
+- [Overview of the Chair role and responsibilities](terms-of-reference.md#chair)
 - Term length  
 - Number of positions available
 - Key dates (nomination deadline, voting period)  
