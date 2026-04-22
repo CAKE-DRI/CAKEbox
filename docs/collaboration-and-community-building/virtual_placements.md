@@ -16,6 +16,7 @@ Virtual placements - while not offering the same complete absorption as an in-pe
 for them to be successful, conscious effort has to be made by the host as well as the (virtual) visitor to give them the same
 priority as an in-person visit.
 
+The [general guidance on best practices for placements and visits](how-to-placements-and-visit.md) still applies to virtual placements.
 
 ## Example Timeline
 
