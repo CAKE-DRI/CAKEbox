@@ -29,6 +29,8 @@ All engaged in the CAKE network must abide by the [CAKE Code of Conduct](../code
 ### In-Person and Virtual Placements
 The CAKE Placements and Visits Programme is open to both in-person and virtual placements. Regardless of format, placements and visits should be structured, purposeful, and include dedicated time for meaningful collaboration. Virtual engagements are expected to offer the same level of planning and intent as in-person experiences.
 
+**[See you guidance on virtual placements for more information.](virtual_placements.md)**
+
 ## Before submitting your Expression of Interest form 
 
 * Collaborate in setting clear objectives: What do you want to achieve? What knowledge will be shared, learned or developed? 
