@@ -69,7 +69,7 @@ Chair(s) who wish to step down, regardless of term length, must either:
 A Chair may be removed if they are not fulfilling their role or breach the CAKE Code of Conduct.
 
 * The process may be initiated by a formal complaint to the CAKE and/or CoSeC management team.
-    * CAKE Management Team: [cake-management@mlist.is.ed.ac.uk](mailto:cake-management@mlist.is.ed.ac.uk) 
+    * CAKE Management Team: [cake@jiscmail.ac.uk](mailto:cake@jiscmail.ac.uk) 
     * CoSeC Management: [COSEC@stfc.ac.uk](mailto:COSEC@stfc.ac.uk) 
 * Members of the CAKE and CoSeC management teams who are not Members or Chairs of the working group will investigate the complaint. This may include action up to and including: 
     * Giving the Chair an opportunity to respond, including explaining any barriers to participation or mitigating circumstances. 
@@ -102,7 +102,7 @@ Members of the CAKE-CoSeC EDI working group will:
 A Member may be removed if they are not fulfilling their role or breach the CAKE Code of Conduct.
 
 * The process may be initiated by a formal complaint submitted to the Chair(s), a formal complaint submitted to the CAKE and/or CoSeC management team, or directly initiated by the Chair(s). 
-    * CAKE Management Team: [cake-management@mlist.is.ed.ac.uk](mailto:cake-management@mlist.is.ed.ac.uk) 
+    * CAKE Management Team: [cake@jiscmail.ac.uk](mailto:cake@jiscmail.ac.uk) 
     * CoSeC Management: [COSEC@stfc.ac.uk](mailto:COSEC@stfc.ac.uk) 
 * The process may include action up to and including: 
     * Giving the Member an opportunity to respond, including explaining any barriers to participation or mitigating circumstances. 
@@ -142,7 +142,7 @@ The CAKE-CoSeC EDI working group will publish updates, recommendations, and outp
 
 ## Contact:
 * Current Chair(s): Eleanor Broadway ([e.broadway@epcc.ed.ac.uk](mailto:e.broadway@epcc.ed.ac.uk)) 
-* CAKE Management ([cake-management@mlist.is.ed.ac.uk](mailto:cake-management@mlist.is.ed.ac.uk)) 
+* CAKE Management ([cake@jiscmail.ac.uk](mailto:cake@jiscmail.ac.uk)) 
 * CoSeC Management ([cosec@stfc.ac.uk](mailto:cosec@stfc.ac.uk)) 
 
 ## Review 
