@@ -15,7 +15,7 @@ Contributions may include:
 
 !!! question "Need help?" 
 
-    If you have any questions or need guidance, please contact the committee at **[cake-management@mlist.is.ed.ac.uk](mailto:cake-management@mlist.is.ed.ac.uk)**.
+    If you have any questions or need guidance, please contact the committee at **[cake@jiscmail.ac.uk](mailto:cake@jiscmail.ac.uk)**.
 
 ---
 
