@@ -151,7 +151,7 @@ Where possible, decisions to accept or reject an application will be based on th
 This meeting is organised by the RL, with the date set prior to the review process beginning. Meetings are held virtually and will be confidential. In order to make a decision, at least two reviewers of each application discussed in the meeting must be present. If a decision still cannot be reached, the RL will make the final funding decision, informed by the RC’s recommendations and written assessments. 
 
 ## Contact:
-For questions or to update your availability, please contact: [cake-management@mlist.is.ed.ac.uk](mailto:cake-management@mlist.is.ed.ac.uk). 
+For questions or to update your availability, please contact: [cake@jiscmail.ac.uk](mailto:cake@jiscmail.ac.uk). 
 
 
 ## Review 
