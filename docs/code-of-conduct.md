@@ -64,7 +64,7 @@ If you experience or witness a Code of Conduct violation, or have any related co
 For issues within the CAKE NetworkPlus: 
 
 **Committee Contact:** 
-[cake-management@mlist.is.ed.ac.uk](mailto:cake-management@mlist.is.ed.ac.uk)
+[cake@jiscmail.ac.uk](mailto:cake@jiscmail.ac.uk)
 
 **Individual Contacts:**
 
