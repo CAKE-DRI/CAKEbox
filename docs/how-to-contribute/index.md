@@ -35,7 +35,7 @@ CAKEbox is hosted on GitHub, which allows contributors to submit content for rev
 
 !!! question "New to GitHub?"
 
-    If you are new to GitHub, we recommend starting with the [Hello World guide](https://docs.github.com/en/get-started/start-your-journey/hello-world).  
+    If you are new to GitHub, we recommend starting with the [Hello World guide](https://docs.github.com/en/get-started/start-your-journey/hello-world), or with this guide series: [Git for Researchers](https://wong-hl.github.io/git-for-researchers/)
 
     You can also make small changes directly in your browser by following our guide:  
     [Editing a GitHub Pages Webpage in Your Web Browser](github-webpages.md)

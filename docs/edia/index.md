@@ -55,3 +55,7 @@ The following groups provide curations of valuable EDIA leadership and resources
 - [EPSRC EDI Hub+](https://edihubplus.ac.uk/resource-centre/)
 - [UKRI Equality, Diversity and Inclusion](https://www.ukri.org/what-we-do/supporting-healthy-research-and-innovation-culture/equality-diversity-and-inclusion/)
 - [Move the Needle Knowledge Portal](https://alces-flight.com/move-the-needle-knowledge-base/)
+- [RainbowR -  connect, support and promote LGBTQ+ people in the R community](https://rainbowr.org/)
+- [SSI News and Blogs Hub](https://www.software.ac.uk/news-and-blogs-hub)
+
+    - [Inclusive Event Planning from Start to Finish](https://www.software.ac.uk/news/new-guide-inclusive-event-planning-start-finish)
