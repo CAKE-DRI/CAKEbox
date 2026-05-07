@@ -1,35 +1,37 @@
-# Welcome to CAKEbox! 
+# Welcome to CAKEbox 🍰📦
 
-This is a community-driven hub for exchanging knowledge about knowledge exchange. 
+CAKEbox is a community-driven hub for sharing knowledge about knowledge exchange.
 
-## To make a contribution: 
-- Create a [GitHub](https://github.com) account.
-- Fork the repository.
-- Create a new branch for your changes.
-- Make your edits to the project.
-- Commit your changes iwth a clear message.
-- Issue a pull request against the main branch.
-- We’ll review your PR, give feedback, and merge it when it’s ready.
+It is a space to discover and contribute resources on how to do knowledge exchange effectively, including:
 
-New to GitHub? Try the [Hello World guide](https://docs.github.com/en/get-started/start-your-journey/hello-world) to get started. 
+* Advice and best practices
+* Guides and toolkits
+* Templates and examples
+* Links to useful external resources
 
-## View the documentation locally: 
+## Contributing
 
-You can run CAKEbox locally to test changes before submitting them to review - perfect for catching small typos and mistakes before they go live. 
+CAKEbox is built for the community, by the community — and we welcome all contributions.
 
-First, you need to get the code:  
-- Create a [GitHub](https://github.com) account.
-- Fork the CAKEbox repository and clone it locally. 
-- Create a new branch for your changes.
+Learn how to contribute here: [How to contribute to CAKEbox](https://www.cake.ac.uk/CAKEbox/how-to-contribute/?utm_source=chatgpt.com)
 
-Next, install `mkdocs`, build the documentation and launch a local server: 
-```bash 
-pip install mkdocs
-mkdocs serve
-```
+### In short
 
-View in your local browser at http://127.0.0.1:8000/. 
+This documentation site is organised by themes. Visit each theme page to explore the types of content that belong there. If you cannot find a suitable theme, feel free to create a new one.
 
-You can now make changes live and edits will instantly appear in your local version - a bit like a sandbox. 
+You can contribute by:
 
-Once you are happy, commit changes and open a pull request.
+* Writing new content
+* Uploading existing materials
+* Signposting useful external resources
+* Improving or updating existing pages
+
+## Community Guidelines
+
+Please help us keep CAKEbox welcoming, practical, and collaborative by:
+
+* Following our [Code of Conduct](docs/code-of-conduct.md)
+* Using clear and accessible language
+* Crediting original authors and sources where appropriate
+* Sharing resources that are relevant to knowledge exchange practice
+* Being constructive and respectful in discussions and edits

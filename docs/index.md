@@ -1,32 +1,44 @@
 ---
-title:
+title: Welcome to CAKEBox
 tags: 
 ---
 
 <p align="center">
-  <img src="images/CAKEbox.png" alt="CAKE logo" width="400"/>
+  <img src="images/CAKEbox.png" alt="CAKEbox logo" width="300"/>
 </p>
 
+<h1 align="center">Welcome to CAKEbox 🍰📦</h1>
 
-Welcome to CAKEbox! 
-
-This is the Computational Abilities Knowledge Exchange (CAKE) :cake: project's hub for the UK Digital Research Infrastructure (DRI) community to exchange knowledge, share best practices and reuse practical templates and guidance. 
-
-## Explore CAKEbox 
-
-Below are the central themes that we are using to organise the resources within CAKEbox. Select a theme to explore guidance, templates, and examples: 
-
-<!-- material/tags {include: [Central themes]} -->
+<p align="center">
+  A community hub for sharing knowledge, guidance, and practical resources
+  across the UK Digital Research Infrastructure (DRI) landscape.
+</p>
 
 ---
 
-## Contributing
+## About
 
-CAKEbox brings together community-contributed resources designed to support you. If you have guidance, templates, reflections, or examples that others would benefit from, **[we encourage you to contribute](how-to-contribute/index.md)**.
+CAKEbox, delivered as part of the [CAKE project](https://www.cake.ac.uk/), is the knowledge-sharing hub for the UK DRI community to:
+
+- Exchange knowledge and experience  
+- Share best practices and lessons learned  
+- Discover reusable templates, guidance, and examples  
+- Signpost useful external resources  
+
+---
+
+
+## Explore 
+
+CAKEbox is organised around a set of central themes.
+
+Browse the themes below to discover guidance, templates, examples, and community-contributed resources.
+
+<!-- material/tags {include: [Central themes]} -->
 
 --- 
 
-## Other Hubs
+## Other Useful Hubs
 
 Check-out these great collections from communities within the UK large-scale computing landscape: 
 
@@ -34,6 +46,16 @@ Check-out these great collections from communities within the UK large-scale com
     - Including information ranging from software project management and sustainability to event organisation and online training delivery.
 - [Society of Research Software Engineering Resources](https://society-rse.org/resources/)
     - Ranging from EDIA to remote working to reproducible research     
+
+---
+
+## Contributing
+
+CAKEbox is built by the community, for the community.
+
+If you have guidance, templates, reflections, examples, or resources that could help others, we would love for you to contribute.
+
+👉 **[Learn how to contribute](how-to-contribute/index.md)**
 
 ---
 
