@@ -13,17 +13,37 @@ Often the most helpful things are simple — a practical tip, something that wor
 
 Curated by the [CAKE team](https://www.cake.ac.uk/about/who-are-we).
 
-## Explore: 
+## 📚 Tip Themes
 
-<!-- material/tags {include: [Top Tips]} -->
+Browse community advice by topic.
 
+<div class="tip-theme-grid">
 
-### Inspirations for tips: 
+<div class="tip-theme-card">
+<h3>🎤 Events</h3>
+<p>Tips for workshops, conferences and hybrid meetings.</p>
+<a href="../themes/events/">Explore →</a>
+</div>
 
-* “What’s one thing you wish you knew earlier?”
-* “What’s a small thing that made a big difference?”
-* “What advice would you give someone new to this?”
-* “What mistake helped you learn something useful?”
+<div class="tip-theme-card">
+<h3>🤝 Collaboration</h3>
+<p>Working together across communities and disciplines.</p>
+<a href="../themes/collaboration/">Explore →</a>
+</div>
+
+<div class="tip-theme-card">
+<h3>🌍 Inclusion</h3>
+<p>Accessibility and inclusive community practices.</p>
+<a href="../themes/inclusion/">Explore →</a>
+</div>
+
+<div class="tip-theme-card">
+<h3>🧠 Facilitation</h3>
+<p>Helping conversations and group activities work well.</p>
+<a href="../themes/facilitation/">Explore →</a>
+</div>
+
+</div>
 
 
 ## Contributing 
@@ -38,4 +58,3 @@ Please also familiarise yourself with our [Code of Conduct](../code-of-conduct.m
 * Gracefully accept constructive criticism
 * Focus on what is best for the community
 * Show courtesy and respect towards others
-
