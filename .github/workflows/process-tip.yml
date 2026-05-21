@@ -1,0 +1,54 @@
+name: Process Tips
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  add-tip:
+
+    if: github.event.label.name == 'approved'
+
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Parse issue
+        run: |
+
+          BODY="${{ github.event.issue.body }}"
+
+          TITLE=$(echo "$BODY" | grep "^title:" | sed 's/title: //')
+          EMOJI=$(echo "$BODY" | grep "^emoji:" | sed 's/emoji: //')
+          COLOR=$(echo "$BODY" | grep "^color:" | sed 's/color: //')
+
+          TEXT=$(echo "$BODY" | sed -n '/^text:/,$p' | tail -n +2)
+
+          echo "" >> data/tips/collaboration.yml
+          echo "- title: \"$TITLE\"" >> data/tips/collaboration.yml
+          echo "  text: |" >> data/tips/collaboration.yml
+
+          while IFS= read -r line; do
+            echo "    $line" >> data/tips/collaboration.yml
+          done <<< "$TEXT"
+
+          echo "  emoji: \"$EMOJI\"" >> data/tips/collaboration.yml
+          echo "  color: \"$COLOR\"" >> data/tips/collaboration.yml
+
+      - name: Commit changes
+        run: |
+
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+
+          git add data/tips/collaboration.yml
+
+          git commit -m "Add approved collaboration tip"
+
+          git push

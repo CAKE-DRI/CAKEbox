@@ -1,107 +1,108 @@
 ---
 title: Collaboration
-tags: [Top Tips, Events]
 ---
 
 # 🤝 Collaboration
 
-Tips for collaboration.
-
----
-
-## ✨ Community Tips
-
+Tips, lessons learned, and community advice about working together effectively.
 
 <div class="sticky-board">
 
-  <div class="sticky-note yellow">
-    <div class="note-title">🧠 Communicating science clearly</div>
-    <div class="note-text">
-      Focus on distilling complex ideas into core principles rather than full detail.
-      It helps non-experts engage and speeds up collaboration.
-    </div>
-  </div>
+{% for tip in tips.collaboration %}
 
-  <div class="sticky-note blue">
-    <div class="note-title">⏳ Time with domain experts is limited</div>
-    <div class="note-text">
-      Prepare focused questions before meeting experts.
-      Prioritise what only they can answer.
-    </div>
-  </div>
+<div class="sticky-note {{ tip.color }}">
 
-  <div class="sticky-note pink">
-    <div class="note-title">🤝 Collaboration is also social</div>
-    <div class="note-text">
-      Building professional relationships and a sense of belonging is just as important as delivering work!
-    </div>
-  </div>
+<div class="note-title">
+{{ tip.emoji }} {{ tip.title }}
+</div>
 
-  <div class="sticky-note green">
-    <div class="note-title">🌐 Online vs in-person matters</div>
-    <div class="note-text">
-      Use in-person time for networking, informal discussion and trust-building.
-    </div>
-  </div>
+<div class="note-text">
+{{ tip.text }}
+</div>
 
-  <div class="sticky-note yellow">
-    <div class="note-title">☕ Conversations need space</div>
-    <div class="note-text">
-      Some of the most valuable ideas emerge in informal moments (coffee breaks, hallway chats).
-    </div>
-  </div>
+</div>
 
-  <div class="sticky-note blue">
-    <div class="note-title">📱 Good hybrid setups are key!</div>
-    <div class="note-text">
-      Hybrid setups need intentional design or they risk excluding participants unintentionally.
-    </div>
-  </div>
-
-  <div class="sticky-note pink">
-    <div class="note-title">🗣️ Participation must be designed</div>
-    <div class="note-text">
-      Use multiple channels (spoken, written, breakout formats) to include different communication styles.
-    </div>
-  </div>
-
-  <div class="sticky-note green">
-    <div class="note-title">🌍 Hybrid expands access</div>
-    <div class="note-text">
-      When done well, hybrid formats increase diversity and enable more people to contribute.
-    </div>
-  </div>
+{% endfor %}
 
 </div>
 
 ---
 
-
 ## ✨ Share your experience
 
-Got a useful tip, lesson learned, or idea? Add it below 👇
-
-When you click **Add tip**, a GitHub page will open with your tip already filled in.  
-Just press **Create issue** -that’s it! 🎉 
+Got a useful collaboration tip, lesson learned, or idea?
 
 <div class="submit-box">
 
-<form action="https://github.com/CAKE-DRI/CAKEbox/issues/new" method="get">
+  <input
+    id="tip-title"
+    class="md-input"
+    type="text"
+    placeholder="Tip title" />
 
-  <input name="title"
-    placeholder="Short title of your tip"
-    class="tip-input" />
+  <textarea
+    id="tip-text"
+    class="md-input"
+    rows="5"
+    placeholder="Share your experience or advice..."></textarea>
 
-  <textarea name="body"
-    placeholder="Share your tip, experience or advice..."
-    class="tip-textarea"></textarea>
+  <label for="tip-emoji"><strong>Emoji</strong></label>
 
-  <input type="hidden" name="labels" value="top-tip,events" />
+  <select id="tip-emoji" class="md-input">
+    <option>🤝</option>
+    <option>💡</option>
+    <option>📝</option>
+    <option>🚀</option>
+    <option>🎯</option>
+    <option>✨</option>
+  </select>
 
-  <button type="submit" class="md-button md-button--primary">
+  <label for="tip-colour"><strong>Sticky note colour</strong></label>
+
+  <select id="tip-colour" class="md-input">
+    <option value="yellow">Yellow</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+    <option value="pink">Pink</option>
+  </select>
+
+  <button
+    class="md-button md-button--primary"
+    onclick="submitTip()">
     ✨ Add tip
   </button>
 
-</form>
-
 </div>
+
+<script>
+
+function submitTip() {
+
+  const title = document.getElementById("tip-title").value;
+  const text = document.getElementById("tip-text").value;
+  const emoji = document.getElementById("tip-emoji").value;
+  const colour = document.getElementById("tip-colour").value;
+
+  const issueTitle =
+    `[Collaboration Tip] ${title}`;
+
+  const issueBody =
+`title: ${title}
+
+emoji: ${emoji}
+
+color: ${colour}
+
+text:
+${text}`;
+
+  const url =
+  "https://github.com/mzhc13/CAKEbox/issues/new"
+    + "?labels=top-tip,collaboration"
+    + "&title=" + encodeURIComponent(issueTitle)
+    + "&body=" + encodeURIComponent(issueBody);
+
+  window.open(url, "_blank");
+}
+
+</script>

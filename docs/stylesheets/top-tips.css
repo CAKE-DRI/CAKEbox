@@ -147,11 +147,25 @@
 }
 
 .submit-box {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid #3F5E8A;
-  border-radius: 16px;
-  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  max-width: 700px;
+
   margin-top: 2rem;
+}
+
+.md-input {
+  width: 100%;
+
+  padding: 0.8rem;
+
+  border-radius: 8px;
+
+  border: 1px solid #ccc;
+
+  font-size: 1rem;
 }
 
 .tip-input, .tip-textarea {
