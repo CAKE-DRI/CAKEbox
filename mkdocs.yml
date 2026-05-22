@@ -48,12 +48,14 @@ theme:
 
 extra_css:
   - stylesheets/cake.css
-    
+  - stylesheets/top-tips.css 
+      
 plugins:
   - search
   # - git-revision-date
   - meta
   - tags
+  - macros
 
   # - git-revision-date-localized
   # - git-committers

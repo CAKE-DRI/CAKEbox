@@ -1,0 +1,86 @@
+name: Approve tip into YAML
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  update-yaml:
+    if: github.event.label.name == 'tips-approved'
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Write issue body to file
+        run: |
+          cat << 'EOF' > issue.txt
+          ${{ github.event.issue.body }}
+          EOF
+
+      - name: Update YAML
+        run: |
+          python << 'EOF'
+          import yaml
+          from pathlib import Path
+
+          body = Path("issue.txt").read_text()
+
+          def get(field):
+              for line in body.splitlines():
+                  if line.startswith(field + ":"):
+                      return line.split(":", 1)[1].strip()
+              return ""
+
+          theme = get("theme")
+
+          if not theme:
+              raise Exception("No theme found in issue body")
+
+          yaml_path = Path(f"data/tips/{theme}.yml")
+
+          if yaml_path.exists():
+              data = yaml.safe_load(yaml_path.read_text()) or []
+          else:
+              data = []
+
+          new_tip = {
+              "title": get("title"),
+              "text": get("text"),
+              "emoji": get("emoji"),
+              "color": get("color"),
+          }
+
+          data.insert(0, new_tip)
+
+          yaml_path.write_text(
+              yaml.dump(data, allow_unicode=True),
+              encoding="utf-8"
+          )
+
+          print(f"Updated {yaml_path}")
+          EOF
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add data/tips/
+
+          git commit -m "Add approved tip #${{ github.event.issue.number }}" || echo "No changes"
+
+          git push
