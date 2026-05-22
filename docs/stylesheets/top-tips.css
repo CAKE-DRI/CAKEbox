@@ -101,9 +101,7 @@
   padding: 1.5rem;
 
   border-radius: 16px;
-
   border: 1px solid rgba(63, 94, 138, 0.35);
-
   background: rgba(255,255,255,0.03);
 }
 
@@ -113,7 +111,6 @@
 
   margin-top: 0;
   margin-bottom: 0.1rem;
-
   opacity: 0.8;
 
   font-size: 0.95rem;
@@ -188,35 +185,25 @@ margin-top: 1rem;
   opacity: 0.8;
 }
 
-/* GRID */
 
 .emoji-grid {
 
   display: grid;
-
   grid-template-columns: repeat(9, 1fr);
-
   gap: 0.5rem;
-
   max-width: 420px;
 }
 
-/* BUTTON */
+
 
 .emoji-btn {
 
   border: 1px solid #6FA8FF;
-
   background: rgba(255,255,255,0.04);
-
   border-radius: 10px;
-
   padding: 0.55rem;
-
   font-size: 1.2rem;
-
   cursor: pointer;
-
   transition:
     transform 0.15s ease,
     background 0.15s ease,
@@ -226,8 +213,7 @@ margin-top: 1rem;
 
 .emoji-btn:hover {
 
-  transform: translateY(-2px);
-
+  transform: translateY(-2px)
   background: rgba(255,255,255,0.08);
 }
 
@@ -236,7 +222,6 @@ margin-top: 1rem;
 .emoji-btn.active {
 
   background: rgba(111,168,255,0.18);
-
   border-color: #6FA8FF;
 }
 
@@ -253,9 +238,7 @@ margin-top: 1rem;
 .colour-grid {
 
   display: flex;
-
   gap: 0.75rem;
-
   flex-wrap: wrap;
 }
 
@@ -265,13 +248,9 @@ margin-top: 1rem;
 
   width: 58px;
   height: 38px;
-
   border-radius: 10px;
-
   border: 2px solid transparent;
-
   cursor: pointer;
-
   transition:
     transform 0.15s ease,
     border-color 0.15s ease,
