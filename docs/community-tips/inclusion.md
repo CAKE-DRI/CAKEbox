@@ -11,7 +11,7 @@ This topic is **Inclusive Practice & Community Care**. Small things that help pe
 
 <div class="sticky-board">
 
-{% for tip in tips("facilitation") %}
+{% for tip in tips("inclusion") %}
 
 <div class="sticky-note {{ tip.color }}">
   <div class="note-title">
