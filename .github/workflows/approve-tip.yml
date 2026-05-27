@@ -54,7 +54,7 @@ jobs:
           if not theme:
               raise Exception("No theme found in issue body")
 
-          yaml_path = Path(f"_data/tips/{theme}.yml")
+          yaml_path = Path(f"data/tips/{theme}.yml")
 
           if yaml_path.exists():
               data = yaml.safe_load(yaml_path.read_text()) or []
@@ -87,7 +87,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          git add _data/tips/
+          git add data/tips/
 
           git commit -m "Add approved tip #${{ github.event.issue.number }}" || echo "No changes"
 
