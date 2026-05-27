@@ -13,9 +13,35 @@ Often the most helpful things are simple — a practical tip, something that wor
 
 Curated by the [CAKE team](https://www.cake.ac.uk/about/who-are-we).
 
-## Explore: 
+## Explore Themes
 
-<!-- material/tags {include: [Top Tips]} -->
+Browse community advice by topic.
+
+<div class="tip-theme-grid">
+
+{% set themes = [
+  {"name": "Events", "tag": "events", "icon": "🎤", "desc": "Workshops, conferences and hybrid meetings."},
+  {"name": "Collaboration", "tag": "collaboration", "icon": "🤝", "desc": "Working together across teams and disciplines."},
+  {"name": "Inclusion", "tag": "inclusion", "icon": "🌍", "desc": "Accessibility and inclusive community practices."},
+  {"name": "Facilitation", "tag": "facilitation", "icon": "🧠", "desc": "Helping groups work better together."}
+] %}
+
+{% for theme in themes %}
+
+<a class="tip-theme-card" href="../community-tips/{{ theme.tag }}/">
+<div class="tip-theme-icon">{{ theme.icon }}</div>
+<div class="tip-theme-content">
+<h3>{{ theme.name }}</h3>
+<p>{{ theme.desc }}</p>
+</div>
+
+<div class="tip-theme-arrow">→</div>
+
+</a>
+
+{% endfor %}
+
+</div>
 
 
 ### Inspirations for tips: 

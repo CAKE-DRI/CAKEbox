@@ -1,15 +1,17 @@
 ---
-title: Inclusion
-tags: [Top Tips, Inclusion]
+title: Collaboration
+tags: [Top Tips, Collaboration]
 ---
 
-# 🤝 Inclusion
+# 🤝 Collaboration
 
-Tips, lessons learned, and community advice about working together effectively.
+This page is part of our Top Tips campaign — a space to share quick advice, useful experiences, and things you wish someone had told you earlier.
+
+This topic is **Collaboration & Working Together**. How do we make collaboration easier, healthier, and more effective?
 
 <div class="sticky-board">
 
-{% for tip in tips("inclusion") %}
+{% for tip in tips("collaboration") %}
 
 <div class="sticky-note {{ tip.color }}">
   <div class="note-title">
@@ -19,6 +21,9 @@ Tips, lessons learned, and community advice about working together effectively.
   <div class="note-text">
     {{ tip.text }}
   </div>
+  
+  
+  
 </div>
 
 {% endfor %}
@@ -126,7 +131,7 @@ Tips, lessons learned, and community advice about working together effectively.
 
   <button
     class="tip-submit-btn"
-    onclick="submitTip('Inclusion')">
+    onclick="submitTip('collaboration')">
 
     Submit
 
@@ -137,6 +142,21 @@ Tips, lessons learned, and community advice about working together effectively.
 
 
 </div>
+
+
+!!! question "Contributing:" 
+
+
+    Read our [How to contribute](../how-to-contribute/index.md) guide for more.
+
+    Please also familiarise yourself with our [Code of Conduct](../code-of-conduct.md). 
+
+    * Use welcoming and inclusive language
+    * Be respectful of different viewpoints and experiences
+    * Gracefully accept constructive criticism
+    * Focus on what is best for the community
+    * Show courtesy and respect towards others
+
 
 <script>
 

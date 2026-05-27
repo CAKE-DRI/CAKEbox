@@ -1,15 +1,17 @@
 ---
-title: Collaboration
-tags: [Top Tips, Collaboration]
+title: Inclusive Practice & Community Care
+tags: [Top Tips, Inclusion]
 ---
 
-# 🤝 Collaboration
+# 🤝 Inclusion
 
-Tips, lessons learned, and community advice about working together effectively.
+This page is part of our Top Tips campaign — a space to share quick advice, useful experiences, and things you wish someone had told you earlier.
+
+This topic is **Inclusive Practice & Community Care**. Small things that help people feel included, supported, and able to participate.
 
 <div class="sticky-board">
 
-{% for tip in tips("collaboration") %}
+{% for tip in tips("inclusion") %}
 
 <div class="sticky-note {{ tip.color }}">
   <div class="note-title">
@@ -126,7 +128,7 @@ Tips, lessons learned, and community advice about working together effectively.
 
   <button
     class="tip-submit-btn"
-    onclick="submitTip('collaboration')">
+    onclick="submitTip('Inclusion')">
 
     Submit
 
@@ -137,6 +139,19 @@ Tips, lessons learned, and community advice about working together effectively.
 
 
 </div>
+
+!!! question "Contributing:" 
+
+
+    Read our [How to contribute](../how-to-contribute/index.md) guide for more.
+
+    Please also familiarise yourself with our [Code of Conduct](../code-of-conduct.md). 
+
+    * Use welcoming and inclusive language
+    * Be respectful of different viewpoints and experiences
+    * Gracefully accept constructive criticism
+    * Focus on what is best for the community
+    * Show courtesy and respect towards others
 
 <script>
 
