@@ -9,9 +9,11 @@ This page is part of our Top Tips campaign — a space to share quick advice, us
 
 This topic is **Inclusive Practice & Community Care**. Small things that help people feel included, supported, and able to participate.
 
+{% set tips = data.tips.inclusion %}
+
 <div class="sticky-board">
 
-{% for tip in tips("inclusion") %}
+{% for tip in tips %}
 
 <div class="sticky-note {{ tip.color }}">
   <div class="note-title">
