@@ -6,7 +6,7 @@ on:
 
 jobs:
   update-yaml:
-    if: github.event.label.name == 'tips-approved'
+    if: github.event.action == 'labeled' && github.event.label.name == 'tips-approved'
     runs-on: ubuntu-latest
 
     permissions:
@@ -31,7 +31,7 @@ jobs:
           ${{ github.event.issue.body }}
           EOF
 
-      - name: Update YAML
+            - name: Update YAML
         run: |
           python << 'EOF'
           import yaml
@@ -50,7 +50,7 @@ jobs:
           if not theme:
               raise Exception("No theme found in issue body")
 
-          yaml_path = Path(f"data/tips/{theme}.yml")
+          yaml_path = Path(f"_data/tips/{theme}.yml")
 
           if yaml_path.exists():
               data = yaml.safe_load(yaml_path.read_text()) or []
@@ -79,8 +79,21 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          git add data/tips/
+          git add _data/tips/
 
           git commit -m "Add approved tip #${{ github.event.issue.number }}" || echo "No changes"
 
           git push
+
+      - name: Install MkDocs
+        run: |
+          pip install mkdocs mkdocs-material mkdocs-macros-plugin pyyaml
+
+      - name: Build site
+        run: mkdocs build
+
+      - name: Deploy site
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
