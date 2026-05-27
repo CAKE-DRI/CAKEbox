@@ -128,7 +128,7 @@ This topic is **Preparing for Conferences, Events, Talks**. Whether you’re pre
 
   <button
     class="tip-submit-btn"
-    onclick="submitTip('Events')">
+    onclick="submitTip('events')">
 
     Submit
 

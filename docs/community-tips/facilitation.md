@@ -126,7 +126,7 @@ Tips, lessons learned, and community advice about working together effectively.
 
   <button
     class="tip-submit-btn"
-    onclick="submitTip('Facilitation')">
+    onclick="submitTip('facilitation')">
 
     Submit
 
