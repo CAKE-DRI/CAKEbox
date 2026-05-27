@@ -22,8 +22,12 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
-        run: pip install pyyaml
+      - name: Install Python dependencies
+        run: |
+          pip install pyyaml
+          pip install mkdocs
+          pip install mkdocs-material
+          pip install mkdocs-macros-plugin
 
       - name: Write issue body to file
         run: |
@@ -31,7 +35,7 @@ jobs:
           ${{ github.event.issue.body }}
           EOF
 
-            - name: Update YAML
+      - name: Update YAML
         run: |
           python << 'EOF'
           import yaml
@@ -67,7 +71,11 @@ jobs:
           data.insert(0, new_tip)
 
           yaml_path.write_text(
-              yaml.dump(data, allow_unicode=True),
+              yaml.dump(
+                  data,
+                  allow_unicode=True,
+                  sort_keys=False
+              ),
               encoding="utf-8"
           )
 
@@ -85,11 +93,7 @@ jobs:
 
           git push
 
-      - name: Install MkDocs
-        run: |
-          pip install mkdocs mkdocs-material mkdocs-macros-plugin pyyaml
-
-      - name: Build site
+      - name: Build MkDocs site
         run: mkdocs build
 
       - name: Deploy site
