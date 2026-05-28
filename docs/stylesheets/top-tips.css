@@ -251,7 +251,26 @@ margin-top: 1rem;
   max-width: 420px;
 }
 
+@media (max-width: 600px){
 
+.emoji-grid {
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  max-width: 420px;
+}
+
+.sticky-board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+
+}
 
 .emoji-btn {
 
