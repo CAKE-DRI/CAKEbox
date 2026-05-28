@@ -8,6 +8,7 @@ This theme is about **preparing for conferences, events, talks**. Whether you’
 
 Add your sprinkles of knowledge below: a quick tip, small insight, or lesson learned.
 
+
 <div class="sticky-board">
 
 {% for tip in tips("events") %}
@@ -35,13 +36,13 @@ Add your sprinkles of knowledge below: a quick tip, small insight, or lesson lea
   <p class="submit-description">
     Share a tip, lesson learned, or useful advice with the community.
   </p>
-  
-  <p class="submit-helper">
+   <p class="submit-helper">
   </br>
   After clicking <strong>Submit</strong>, a GitHub page will open
   with your tip pre-filled. Simply click <strong>Commit changes</strong>
   to send it to the CAKE team for review before it goes live.
 </p>
+
   <input
     class="tip-input"
     id="tip-title"
@@ -139,7 +140,6 @@ Add your sprinkles of knowledge below: a quick tip, small insight, or lesson lea
 
 </div>
 
-
 ---
 
 ## Explore our other themes
@@ -158,8 +158,6 @@ Add your sprinkles of knowledge below: a quick tip, small insight, or lesson lea
     * Gracefully accept constructive criticism
     * Focus on what is best for the community
     * Show courtesy and respect towards others -->
-
-    
 
 <script>
 
@@ -192,6 +190,8 @@ document.querySelectorAll(".colour-btn").forEach(btn => {
   });
 
 });
+
+</script>
 
 <script>
 
