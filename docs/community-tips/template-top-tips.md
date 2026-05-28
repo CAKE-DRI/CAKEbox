@@ -1,6 +1,6 @@
 ---
 title: Top Tips Template
-tags: [Top Tips]
+# tags: [Sprinkles of Knowledge]
 ---
 
 ## About 
@@ -38,8 +38,6 @@ This page is part of our Top Tips campaign — a space to share quick advice, us
 # Template
 
 This page is part of our Top Tips campaign — a space to share quick advice, useful experiences, and things you wish someone had told you earlier.
-
-
 
 <div class="sticky-board">
 

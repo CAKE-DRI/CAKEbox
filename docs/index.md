@@ -10,37 +10,37 @@ tags:
 <h1 align="center">Welcome to CAKEbox 🍰📦</h1>
 
 <p align="center">
-  A community hub for sharing knowledge, guidance, and practical resources
-  across the UK Digital Research Infrastructure (DRI) landscape.
+  A community knowledge hub for the UK Digital Research Infrastructure (DRI) community
 </p>
 
 ---
 
-## About
+## What is CAKEbox? 
 
-CAKEbox, delivered as part of the [CAKE project](https://www.cake.ac.uk/), is the knowledge-sharing hub for the UK DRI community to:
+CAKEbox is a shared space for practical knowledge from across the UK DRI community.
 
-- Exchange knowledge and experience  
-- Share best practices and lessons learned  
-- Discover reusable templates, guidance, and examples  
-- Signpost useful external resources  
+Here you’ll find:
+
+- Guidance and how-tos  
+- Templates and reusable materials  
+- Real examples from the community  
+- Lessons learned and best practice  
+- Useful external resources  
+
+
 
 ---
 
 
 ## Explore 
 
-CAKEbox is organised around a set of central themes.
-
-Browse the themes below to discover guidance, templates, examples, and community-contributed resources.
+Browse by theme to find resources, tools, and community contributions.
 
 <!-- material/tags {include: [Central themes]} -->
 
 --- 
 
-## Other Useful Hubs
-
-Check-out these great collections from communities within the UK large-scale computing landscape: 
+## Other Hubs
 
 - [Software Sustainability Institute Resources Hub](https://www.software.ac.uk/resource-hub)
     - Including information ranging from software project management and sustainability to event organisation and online training delivery.
@@ -51,11 +51,15 @@ Check-out these great collections from communities within the UK large-scale com
 
 ## Contributing
 
-CAKEbox is built by the community, for the community.
-
-If you have guidance, templates, reflections, examples, or resources that could help others, we would love for you to contribute.
+CAKEbox is built by the community, for the community. Share what you know! 
 
 👉 **[Learn how to contribute](how-to-contribute/index.md)**
+
+Choose how you’d like to contribute:
+
+1. I have a quick idea or tip to share
+2. I've found a useful resource
+3. I want to write something new 
 
 ---
 

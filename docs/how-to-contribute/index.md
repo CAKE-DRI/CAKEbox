@@ -13,7 +13,7 @@ CAKEbox is hosted on GitHub, making it easy for you to request changes and add r
 
 ### (1) Quick idea or tip
 
-Got a quick thought, tip, or piece of advice? [Add it to our Community Top Tips.](../community-tips/index.md)
+Got a quick thought, tip, or piece of advice? [Add it to our Sprinkles of Knowledge.](../community-tips/index.md)
 
 ### (2) I've found a useful resource
 
