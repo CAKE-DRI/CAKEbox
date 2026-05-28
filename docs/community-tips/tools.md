@@ -226,7 +226,7 @@ color: "${color}"
     "mzhc13/CAKEbox";
 
   const url =
-    `https://github.com/${repo}/new/main`
+    `https://github.com/CAKE-DRI/CAKEbox/new/main`
     + `?filename=${encodeURIComponent(filename)}`
     + `&value=${encodeURIComponent(yaml)}`;
 
