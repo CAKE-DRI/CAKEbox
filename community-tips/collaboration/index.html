@@ -482,7 +482,7 @@
       
       
       
-        <a href="../../how-to-contribute/contribution-template/#tag:collaboration" class="md-tag">Collaboration</a>
+        <a href="../../all/#tag:collaboration" class="md-tag">Collaboration</a>
       
     
       
@@ -511,96 +511,6 @@
 
 
 
-<div class="sticky-note yellow">
-  <div class="note-title">
-    🔍 Share goals!
-  </div>
-
-  <div class="note-text">
-    Collaborate with those people who share your same interests
-  </div>
-
-
-
-</div>
-
-
-
-<div class="sticky-note green">
-  <div class="note-title">
-    💬 Communicating science clearly
-  </div>
-
-  <div class="note-text">
-    Focus on distilling complex ideas into core principles rather than full detail. It helps non-experts engage and speeds up collaboration.
-  </div>
-
-
-
-</div>
-
-
-
-<div class="sticky-note yellow">
-  <div class="note-title">
-    🤝 Time with domain experts is limited
-  </div>
-
-  <div class="note-text">
-    Prepare focused questions before meeting experts. Prioritise what only they can answer.
-  </div>
-
-
-
-</div>
-
-
-
-<div class="sticky-note pink">
-  <div class="note-title">
-    🙌 Collaboration is also social
-  </div>
-
-  <div class="note-text">
-    Building professional relationships and a sense of belonging is just as important as delivering work!
-  </div>
-
-
-
-</div>
-
-
-
-<div class="sticky-note blue">
-  <div class="note-title">
-    📝 Online vs in-person matters
-  </div>
-
-  <div class="note-text">
-    Use in-person time for networking, informal discussion and trust-building.
-  </div>
-
-
-
-</div>
-
-
-
-<div class="sticky-note pink">
-  <div class="note-title">
-    ☕ Conversations need space
-  </div>
-
-  <div class="note-text">
-    Some of the most valuable ideas emerge in informal moments (coffee breaks, hallway chats).
-  </div>
-
-
-
-</div>
-
-
-
 </div>
 
 <hr />
@@ -611,10 +521,11 @@
     Share a tip, lesson learned, or useful advice with the community.
   </p>
 
+
   <p class="submit-helper">
   </br>
-  After clicking <strong>Submit</strong>, a GitHub issue will open
-  with your tip pre-filled. Simply click <strong>Create issue</strong>
+  After clicking <strong>Submit</strong>, a GitHub page will open
+  with your tip pre-filled. Simply click <strong>Commit changes</strong>
   to send it to the CAKE team for review before it goes live.
 </p>
 
@@ -800,6 +711,15 @@ document.querySelectorAll(".colour-btn").forEach(btn => {
 </script>
 
 <script>
+
+
+function slugify(text) {
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/\s+/g, "-");
+}
+
 function submitTip(theme) {
 
   const title =
@@ -821,24 +741,29 @@ function submitTip(theme) {
     return;
   }
 
-  const issueTitle =
-    `[Tip:${theme}] ${title}`;
+  const yaml =
+`title: "${title}"
+text: "${text}"
+emoji: "${emoji}"
+color: "${color}"
+`;
 
-  const issueBody =
-`theme: ${theme}
-title: ${title}
-emoji: ${emoji}
-color: ${color}
-text: ${text}`;
+  const slug = slugify(title);
+
+  const filename =
+    `data/tips/${theme}/${slug}.yml`;
+
+  const repo =
+    "mzhc13/CAKEbox";
 
   const url =
-    "https://github.com/CAKE-DRI/CAKEbox/issues/new"
-    + "?labels=tip-submission," + theme
-    + "&title=" + encodeURIComponent(issueTitle)
-    + "&body=" + encodeURIComponent(issueBody);
+    `https://github.com/${repo}/new/main`
+    + `?filename=${encodeURIComponent(filename)}`
+    + `&value=${encodeURIComponent(yaml)}`;
 
   window.open(url, "_blank");
 }
+
 </script>
 
 
