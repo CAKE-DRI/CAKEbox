@@ -1,25 +1,24 @@
-
 import yaml
 from pathlib import Path
 
 def define_env(env):
 
-    @env.macro
-    def tips(theme):
+    def load_tips(theme):
 
         folder = Path(f"data/tips/{theme}")
 
+        if not folder.exists():
+            return []
+
         all_tips = []
 
-        if folder.exists():
+        for file in sorted(folder.glob("*.yml")):
 
-            for file in sorted(folder.glob("*.yml")):
+            data = yaml.safe_load(file.read_text(encoding="utf-8"))
 
-                tip = yaml.safe_load(
-                    file.read_text(encoding="utf-8")
-                )
-
-                if tip:
-                    all_tips.append(tip)
+            if data:
+                all_tips.append(data)
 
         return all_tips
+
+    env.variables["tips"] = load_tips

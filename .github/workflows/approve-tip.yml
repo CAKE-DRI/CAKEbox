@@ -1,19 +1,20 @@
+
 name: Approve tip into YAML
 
 on:
   issues:
     types: [labeled]
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   update-yaml:
-    if: github.event.action == 'labeled' && github.event.label.name == 'tips-approved'
+    if: github.event.label.name == 'tips-approved'
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
-
     steps:
-
       - name: Checkout repo
         uses: actions/checkout@v4
 
@@ -22,26 +23,16 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install Python dependencies
-        run: |
-          pip install pyyaml
-          pip install mkdocs
-          pip install mkdocs-material
-          pip install mkdocs-macros-plugin
+      - name: Install dependencies
+        run: pip install pyyaml
 
-      - name: Write issue body to file
-        run: |
-          cat << 'EOF' > issue.txt
-          ${{ github.event.issue.body }}
-          EOF
-
-      - name: Update YAML
+      - name: Parse issue + update file
         run: |
           python << 'EOF'
           import yaml
           from pathlib import Path
 
-          body = Path("issue.txt").read_text()
+          body = """${{ github.event.issue.body }}"""
 
           def get(field):
               for line in body.splitlines():
@@ -50,54 +41,38 @@ jobs:
               return ""
 
           theme = get("theme")
+          title = get("title")
+          text = get("text")
+          emoji = get("emoji")
+          color = get("color")
 
-          if not theme:
-              raise Exception("No theme found in issue body")
+          folder = Path(f"data/tips/{theme}")
+          folder.mkdir(parents=True, exist_ok=True)
 
-          yaml_path = Path(f"data/tips/{theme}.yml")
+          slug = title.lower().replace(" ", "-")
+          file_path = folder / f"{slug}.yml"
 
-          if yaml_path.exists():
-              data = yaml.safe_load(yaml_path.read_text()) or []
-          else:
-              data = []
-
-          new_tip = {
-              "title": get("title"),
-              "text": get("text"),
-              "emoji": get("emoji"),
-              "color": get("color"),
+          data = {
+              "title": title,
+              "text": text,
+              "emoji": emoji,
+              "color": color
           }
 
-          data.insert(0, new_tip)
-
-          yaml_path.write_text(
-              yaml.dump(
-                  data,
-                  allow_unicode=True,
-                  sort_keys=False
-              ),
+          file_path.write_text(
+              yaml.dump(data, sort_keys=False, allow_unicode=True),
               encoding="utf-8"
           )
-
-          print(f"Updated {yaml_path}")
           EOF
 
-      - name: Commit changes
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-
-          git add data/tips/
-
-          git commit -m "Add approved tip #${{ github.event.issue.number }}" || echo "No changes"
-
-          git push
-
-      - name: Build MkDocs site
-        run: mkdocs build
-
-      - name: Deploy site
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Add approved tip #${{ github.event.issue.number }}"
+          title: "Add tip #${{ github.event.issue.number }}"
+          body: "Auto-generated PR from approved issue #${{ github.event.issue.number }}"
+          branch: tip-${{ github.event.issue.number }}
+          base: main
+          delete-branch: true
+
