@@ -1,0 +1,364 @@
+.tip-theme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.tip-theme-card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+
+  padding: 1.2rem 1.3rem;
+  border-radius: 16px;
+
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+
+  text-decoration: none;
+  color: inherit;
+
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+
+.tip-theme-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--md-primary-fg-color);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.tip-theme-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.tip-theme-content h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.tip-theme-content p {
+  margin: 0.3rem 0 0;
+  font-size: 0.9rem;
+  opacity: 0.75;
+  line-height: 1.4;
+}
+
+.tip-theme-arrow {
+  margin-left: auto;
+  opacity: 0.4;
+  transition: transform 0.2s ease;
+}
+
+.tip-theme-card:hover .tip-theme-arrow {
+  transform: translateX(5px);
+  opacity: 1;
+}
+
+.sticky-board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  justify-content: flex-start;
+}
+
+
+.sticky-note {
+  width: 200px;
+  min-height: 100px;
+  padding: 1.2rem 1.2rem 1.5rem;
+  font-size: 0.7rem;
+
+  border-radius: 6px;
+
+  box-shadow:
+    0 6px 12px rgba(0, 0, 0, 0.25);
+
+  transform: rotate(var(--r, -1deg));
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  font-family: inherit;
+}
+
+
+.sticky-note:hover {
+  transform: rotate(0deg) translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+}
+
+
+.note-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+    font-size: 0.6rem;
+}
+
+
+.note-text {
+  font-size: 0.6rem;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+
+.sticky-note.yellow {
+  background: #F1F8CA;
+  color: #2b2b2b;
+  --r: -2deg;
+}
+
+.sticky-note.blue {
+  background: #C1E5F5;
+  color: #1f2a2e;
+  --r: 1.5deg;
+}
+
+.sticky-note.pink {
+  background: #F2CFEE;
+  color: #2b2b2b;
+  --r: -1.2deg;
+}
+
+.sticky-note.green {
+  background: #D9F2D0;
+  color: #1f2a2e;
+  --r: 2deg;
+}
+
+
+
+
+
+
+.submit-helper {
+
+  margin-top: -0.3rem;
+  margin-bottom: 1.2rem;
+
+  font-size: 0.88rem;
+
+  line-height: 1.5;
+
+  opacity: 0.72;
+}
+
+
+
+
+
+.submit-box {
+
+  max-width: 700px;
+  gap: 0.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 5rem;
+  padding: 1.5rem;
+
+  border-radius: 16px;
+  border: 1px solid rgba(63, 94, 138, 0.35);
+  background: rgba(255,255,255,0.03);
+}
+
+
+
+.submit-description {
+
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+  opacity: 0.8;
+
+  font-size: 0.95rem;
+}
+
+
+
+.tip-input,
+.tip-textarea,
+.tip-select {
+
+  width: 100%;
+  padding: 0.85rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.04);
+  font-size: 0.95rem;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+  border-color: #6FA8FF;
+  background: rgba(255,255,255,0.06);
+}
+
+
+.tip-controls {
+
+  display: flex;
+  gap: 0.75rem;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+}
+
+
+
+.tip-submit-btn {
+margin-top: 1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.85rem 1.2rem;
+  background: #3F5E8A;
+  color: white;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.tip-submit-btn:hover {
+
+  background: #5377AA;
+  transform: translateY(-1px);
+}
+
+.emoji-picker {
+
+  margin-bottom: 1rem;
+}
+
+.emoji-label {
+
+  margin-bottom: 0.7rem;
+
+  font-size: 0.9rem;
+
+  opacity: 0.8;
+}
+
+
+.emoji-grid {
+
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 0.5rem;
+  max-width: 420px;
+}
+
+
+
+.emoji-btn {
+
+  border: 1px solid #6FA8FF;
+  background: rgba(255,255,255,0.04);
+  border-radius: 10px;
+  padding: 0.55rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    background 0.15s ease,
+    border-color 0.15s ease;
+}
+
+
+
+
+
+
+.emoji-btn.active {
+
+  background: rgba(111,168,255,0.18);
+  border-color: #6FA8FF;
+}
+
+
+
+
+.colour-picker {
+
+  margin-bottom: 1rem;
+}
+
+
+
+.colour-grid {
+
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+
+
+.colour-btn {
+
+  width: 58px;
+  height: 38px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+
+.colour-btn:hover {
+
+  transform: translateY(-2px);
+}
+
+
+
+.colour-btn.active {
+
+  border-color: #6FA8FF;
+
+  box-shadow:
+    0 0 0 3px rgba(111,168,255,0.18);
+}
+
+
+
+.colour-btn.yellow {
+
+  background: #F1F8CA;
+}
+
+.colour-btn.blue {
+
+  background: #C1E5F5;
+}
+
+.colour-btn.green {
+
+  background: #D9F2D0;
+}
+
+.colour-btn.pink {
+
+  background: #F2CFEE;
+}
+
+@media (max-width: 600px) {
+
+  .tip-controls {
+
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tip-select,
+  .tip-submit-btn {
+
+    width: 100%;
+  }
+}
