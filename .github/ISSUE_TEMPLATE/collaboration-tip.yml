@@ -1,0 +1,37 @@
+name: Collaboration Tip
+description: Share a collaboration tip
+title: "[Collaboration Tip]: "
+labels: ["top-tip", "collaboration"]
+
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Tip title
+      placeholder: Keep meetings short
+
+  - type: textarea
+    id: text
+    attributes:
+      label: Your tip
+      placeholder: Share your experience...
+
+  - type: dropdown
+    id: emoji
+    attributes:
+      label: Emoji
+      options:
+        - 🤝
+        - 💡
+        - 📝
+        - 🚀
+
+  - type: dropdown
+    id: color
+    attributes:
+      label: Sticky note colour
+      options:
+        - yellow
+        - blue
+        - green
+        - pink

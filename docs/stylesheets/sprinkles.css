@@ -1,0 +1,24 @@
+.cake-sprinkle {
+  position: fixed;
+  top: -20px;
+  width: 8px;
+  height: 18px;
+  border-radius: 4px;
+  z-index: 9999;
+  pointer-events: none;
+
+  animation-name: sprinkle-fall;
+  animation-timing-function: linear;
+}
+
+@keyframes sprinkle-fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(110vh) rotate(720deg);
+    opacity: 0.9;
+  }
+}
