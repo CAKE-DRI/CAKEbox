@@ -1,13 +1,13 @@
 ---
-title: Inclusive Practice & Community Care
-tags: [Top Tips, Inclusion]
+title: Inclusion
+tags: [Sprinkles of Knowledge, Inclusion]
 ---
 
 # 🤝 Inclusion
 
-This page is part of our Top Tips campaign — a space to share quick advice, useful experiences, and things you wish someone had told you earlier.
+This theme is about **inclusive practice & community care**. Small things that help people feel included, supported, and able to participate.
 
-This topic is **Inclusive Practice & Community Care**. Small things that help people feel included, supported, and able to participate.
+Add your sprinkles of knowledge below: a quick tip, small insight, or lesson learned.
 
 <div class="sticky-board">
 
@@ -29,7 +29,7 @@ This topic is **Inclusive Practice & Community Care**. Small things that help pe
 
 ---
 
-## ✨ Share your experience
+## Add your sticky note
 
 <div class="submit-box">
 
@@ -38,6 +38,7 @@ This topic is **Inclusive Practice & Community Care**. Small things that help pe
   </p>
   
   <p class="submit-helper">
+  </br>
   After clicking <strong>Submit</strong>, a GitHub issue will open
   with your tip pre-filled. Simply click <strong>Create issue</strong>
   to send it to the CAKE team for review before it goes live.
@@ -46,13 +47,13 @@ This topic is **Inclusive Practice & Community Care**. Small things that help pe
   <input
     class="tip-input"
     id="tip-title"
-    placeholder="Tip title"
+    placeholder="Title"
   />
 
   <textarea
     class="tip-textarea"
     id="tip-text"
-    placeholder="Your advice..."
+    placeholder="Your text..."
   ></textarea>
 
   <div class="tip-controls">
@@ -60,7 +61,7 @@ This topic is **Inclusive Practice & Community Care**. Small things that help pe
 
 <div class="emoji-picker">
   <p class="emoji-label">
-    Select an emoji!
+    Select an emoji:
   </p>
 
   <div class="emoji-grid" id="tip-emoji">
@@ -89,7 +90,7 @@ This topic is **Inclusive Practice & Community Care**. Small things that help pe
 <div class="colour-picker">
 
   <p class="emoji-label">
-    Select your sticky note colour!
+    Select your colour:
   </p>
 
   <div class="colour-grid" id="tip-colour">
@@ -140,7 +141,13 @@ This topic is **Inclusive Practice & Community Care**. Small things that help pe
 
 </div>
 
-!!! question "Contributing:" 
+---
+
+## Explore our other themes
+
+<!-- material/tags {include: [Sprinkles of Knowledge]} -->
+
+<!-- !!! question "Contributing:" 
 
 
     Read our [How to contribute](../how-to-contribute/index.md) guide for more.
@@ -151,7 +158,7 @@ This topic is **Inclusive Practice & Community Care**. Small things that help pe
     * Be respectful of different viewpoints and experiences
     * Gracefully accept constructive criticism
     * Focus on what is best for the community
-    * Show courtesy and respect towards others
+    * Show courtesy and respect towards others -->
 
 <script>
 

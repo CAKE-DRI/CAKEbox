@@ -1,13 +1,12 @@
 ---
 title: Collaboration
-tags: [Top Tips, Collaboration]
+tags: [Sprinkles of Knowledge, Collaboration]
 ---
 
 # 🤝 Collaboration
+This theme is about **working better together**. What helps collaboration feel easier, healthier, or more effective?
 
-This page is part of our Top Tips campaign — a space to share quick advice, useful experiences, and things you wish someone had told you earlier.
-
-This topic is **Collaboration & Working Together**. How do we make collaboration easier, healthier, and more effective?
+Add your sprinkles of knowledge below: a quick tip, small insight, or lesson learned.
 
 <div class="sticky-board">
 
@@ -32,7 +31,7 @@ This topic is **Collaboration & Working Together**. How do we make collaboration
 
 ---
 
-## ✨ Share your experience
+## Add your sticky note
 
 <div class="submit-box">
 
@@ -41,6 +40,7 @@ This topic is **Collaboration & Working Together**. How do we make collaboration
   </p>
   
   <p class="submit-helper">
+  </br>
   After clicking <strong>Submit</strong>, a GitHub issue will open
   with your tip pre-filled. Simply click <strong>Create issue</strong>
   to send it to the CAKE team for review before it goes live.
@@ -49,13 +49,13 @@ This topic is **Collaboration & Working Together**. How do we make collaboration
   <input
     class="tip-input"
     id="tip-title"
-    placeholder="Tip title"
+    placeholder="Title"
   />
 
   <textarea
     class="tip-textarea"
     id="tip-text"
-    placeholder="Your advice..."
+    placeholder="Your text..."
   ></textarea>
 
   <div class="tip-controls">
@@ -63,7 +63,7 @@ This topic is **Collaboration & Working Together**. How do we make collaboration
 
 <div class="emoji-picker">
   <p class="emoji-label">
-    Select an emoji!
+    Select an emoji:
   </p>
 
   <div class="emoji-grid" id="tip-emoji">
@@ -92,7 +92,7 @@ This topic is **Collaboration & Working Together**. How do we make collaboration
 <div class="colour-picker">
 
   <p class="emoji-label">
-    Select your sticky note colour!
+    Select your colour:
   </p>
 
   <div class="colour-grid" id="tip-colour">
@@ -143,8 +143,13 @@ This topic is **Collaboration & Working Together**. How do we make collaboration
 
 </div>
 
+---
 
-!!! question "Contributing:" 
+## Explore our other themes
+
+<!-- material/tags {include: [Sprinkles of Knowledge]} -->
+
+<!-- !!! question "Contributing:" 
 
 
     Read our [How to contribute](../how-to-contribute/index.md) guide for more.
@@ -155,7 +160,7 @@ This topic is **Collaboration & Working Together**. How do we make collaboration
     * Be respectful of different viewpoints and experiences
     * Gracefully accept constructive criticism
     * Focus on what is best for the community
-    * Show courtesy and respect towards others
+    * Show courtesy and respect towards others -->
 
 
 <script>

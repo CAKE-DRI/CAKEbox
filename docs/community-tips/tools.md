@@ -1,15 +1,16 @@
 ---
-title: Facilitation
-tags: [Top Tips, Facilitation]
+title: Tools & Workflows
+tags: [Sprinkles of Knowledge, Tools & Workflows]
 ---
 
-# 🤝 Facilitation
+# 🧠 Tools & Workflows 
+This theme is about **finding the right tools for the right job.** What tools have helped you? What workflows save time or make collaboration easier?
 
-Tips, lessons learned, and community advice about working together effectively.
+Add your sprinkles of knowledge below: a quick tip, small insight, or lesson learned.
 
 <div class="sticky-board">
 
-{% for tip in tips("facilitation") %}
+{% for tip in tips("tools") %}
 
 <div class="sticky-note {{ tip.color }}">
   <div class="note-title">
@@ -27,7 +28,7 @@ Tips, lessons learned, and community advice about working together effectively.
 
 ---
 
-## ✨ Share your experience
+## Add your sticky note
 
 <div class="submit-box">
 
@@ -36,6 +37,7 @@ Tips, lessons learned, and community advice about working together effectively.
   </p>
   
   <p class="submit-helper">
+  </br>
   After clicking <strong>Submit</strong>, a GitHub issue will open
   with your tip pre-filled. Simply click <strong>Create issue</strong>
   to send it to the CAKE team for review before it goes live.
@@ -44,13 +46,13 @@ Tips, lessons learned, and community advice about working together effectively.
   <input
     class="tip-input"
     id="tip-title"
-    placeholder="Tip title"
+    placeholder="Title"
   />
 
   <textarea
     class="tip-textarea"
     id="tip-text"
-    placeholder="Your advice..."
+    placeholder="Your text..."
   ></textarea>
 
   <div class="tip-controls">
@@ -58,7 +60,7 @@ Tips, lessons learned, and community advice about working together effectively.
 
 <div class="emoji-picker">
   <p class="emoji-label">
-    Select an emoji!
+    Select an emoji:
   </p>
 
   <div class="emoji-grid" id="tip-emoji">
@@ -87,7 +89,7 @@ Tips, lessons learned, and community advice about working together effectively.
 <div class="colour-picker">
 
   <p class="emoji-label">
-    Select your sticky note colour!
+    Select your colour:
   </p>
 
   <div class="colour-grid" id="tip-colour">
@@ -126,7 +128,7 @@ Tips, lessons learned, and community advice about working together effectively.
 
   <button
     class="tip-submit-btn"
-    onclick="submitTip('facilitation')">
+    onclick="submitTip('tools')">
 
     Submit
 
@@ -134,6 +136,11 @@ Tips, lessons learned, and community advice about working together effectively.
 
 </div>
 
+---
+
+## Explore our other themes
+
+<!-- material/tags {include: [Sprinkles of Knowledge]} -->
 
 
 </div>

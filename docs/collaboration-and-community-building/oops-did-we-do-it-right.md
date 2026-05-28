@@ -1,6 +1,6 @@
 ---
 title: Oops did we do it right? Lessons from Successful Collaborations 
-tags: [Collaboration & Community Building]
+# tags: [Collaboration & Community Building]
 ---
 
 ## Session summary: 
