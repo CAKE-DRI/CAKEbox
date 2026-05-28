@@ -48,8 +48,10 @@ theme:
 
 extra_css:
   - stylesheets/cake.css
-  - stylesheets/top-tips.css 
-      
+  - stylesheets/top-tips.css
+  - stylesheets/sprinkles.css
+
+
 plugins:
   - search
   # - git-revision-date

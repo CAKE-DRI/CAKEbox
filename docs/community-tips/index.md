@@ -3,6 +3,17 @@ title: Sprinkles of Knowledge
 tags: [Central themes, Sprinkles of Knowledge]
 ---
 
+
+<style>
+.md-content h1:first-of-type::before {
+  content: "🧁";
+}
+
+
+</style>
+
+
+
 Welcome to **Sprinkles of Knowledge!** This is where you can find quick tips, advice, and experiences from our community.
 
 The most helpful ideas are often simple: a practical tip, something that worked, a mistake to avoid, or a small insight from experience.
@@ -153,4 +164,65 @@ text: ${text}`;
 
   window.open(url, "_blank");
 }
+</script>
+
+
+<script>
+(function () {
+
+  const KEY = "cameFromHome";
+
+  // Only trigger if user came from home
+  if (!sessionStorage.getItem(KEY)) return;
+
+  // IMPORTANT: consume it so it only triggers once per visit flow
+  sessionStorage.removeItem(KEY);
+
+
+  const colours = [
+    "#ff4d6d",
+    "#ffd166",
+    "#06d6a0",
+    "#118ab2",
+    "#8338ec",
+    "#ff9f1c"
+  ];
+
+  function createSprinkle() {
+    const sprinkle = document.createElement("div");
+
+    sprinkle.className = "cake-sprinkle";
+
+    sprinkle.style.left =
+      Math.random() * window.innerWidth + "px";
+
+    sprinkle.style.backgroundColor =
+      colours[Math.floor(Math.random() * colours.length)];
+
+    sprinkle.style.animationDuration =
+      0.8 + Math.random() * 1.2 + "s";
+
+    sprinkle.style.transform =
+      `rotate(${Math.random() * 360}deg)`;
+
+    document.body.appendChild(sprinkle);
+
+    setTimeout(() => {
+      sprinkle.remove();
+    }, 2200);
+  }
+
+  const interval = setInterval(() => {
+    createSprinkle();
+  }, 20);
+
+  setTimeout(() => {
+    clearInterval(interval);
+
+    // Allow future visits to trigger again
+    window.sprinklesRunning = false;
+
+  }, 1600);
+
+})();
 </script>

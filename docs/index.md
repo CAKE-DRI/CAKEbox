@@ -65,3 +65,8 @@ Choose how you’d like to contribute:
 
 ## Code of Conduct 
 By using this site, you are agreeing to abide by the **[CAKE Code of Conduct](code-of-conduct.md)**, which outlines our commitment to respectful, inclusive, and constructive collaboration.
+
+
+<script>
+  sessionStorage.setItem("cameFromHome", "1");
+</script>
