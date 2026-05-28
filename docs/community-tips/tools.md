@@ -136,6 +136,7 @@ Add your sprinkles of knowledge below: a quick tip, small insight, or lesson lea
 
 </div>
 
+</div>
 ---
 
 ## Explore our other themes
@@ -143,7 +144,6 @@ Add your sprinkles of knowledge below: a quick tip, small insight, or lesson lea
 <!-- material/tags {include: [Sprinkles of Knowledge]} -->
 
 
-</div>
 
 <script>
 
