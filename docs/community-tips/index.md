@@ -175,7 +175,7 @@ text: ${text}`;
   // Only trigger if user came from home
   if (!sessionStorage.getItem(KEY)) return;
 
-  // IMPORTANT: consume it so it only triggers once per visit flow
+  
   sessionStorage.removeItem(KEY);
 
 
