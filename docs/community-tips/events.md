@@ -8,7 +8,6 @@ This theme is about **preparing for conferences, events, talks**. Whether you’
 
 Add your sprinkles of knowledge below: a quick tip, small insight, or lesson learned.
 
-
 <div class="sticky-board">
 
 {% for tip in tips("events") %}
@@ -36,10 +35,11 @@ Add your sprinkles of knowledge below: a quick tip, small insight, or lesson lea
   <p class="submit-description">
     Share a tip, lesson learned, or useful advice with the community.
   </p>
-   <p class="submit-helper">
+  
+  <p class="submit-helper">
   </br>
-  After clicking <strong>Submit</strong>, a GitHub page will open
-  with your tip pre-filled. Simply click <strong>Commit changes</strong>
+  After clicking <strong>Submit</strong>, a GitHub issue will open
+  with your tip pre-filled. Simply click <strong>Create issue</strong>
   to send it to the CAKE team for review before it goes live.
 </p>
 
@@ -140,6 +140,7 @@ Add your sprinkles of knowledge below: a quick tip, small insight, or lesson lea
 
 </div>
 
+
 ---
 
 ## Explore our other themes
@@ -158,6 +159,8 @@ Add your sprinkles of knowledge below: a quick tip, small insight, or lesson lea
     * Gracefully accept constructive criticism
     * Focus on what is best for the community
     * Show courtesy and respect towards others -->
+
+    
 
 <script>
 
@@ -194,15 +197,6 @@ document.querySelectorAll(".colour-btn").forEach(btn => {
 </script>
 
 <script>
-
-
-function slugify(text) {
-  return text
-    .toLowerCase()
-    .replace(/[^\w\s-]/g, "")
-    .replace(/\s+/g, "-");
-}
-
 function submitTip(theme) {
 
   const title =
@@ -224,27 +218,22 @@ function submitTip(theme) {
     return;
   }
 
-  const yaml =
-`title: "${title}"
-text: "${text}"
-emoji: "${emoji}"
-color: "${color}"
-`;
+  const issueTitle =
+    `[Tip:${theme}] ${title}`;
 
-  const slug = slugify(title);
-
-  const filename =
-    `data/tips/${theme}/${slug}.yml`;
-
-  const repo =
-    "mzhc13/CAKEbox";
+  const issueBody =
+`theme: ${theme}
+title: ${title}
+emoji: ${emoji}
+color: ${color}
+text: ${text}`;
 
   const url =
-    `https://github.com/CAKE-DRI/CAKEbox/new/main`
-    + `?filename=${encodeURIComponent(filename)}`
-    + `&value=${encodeURIComponent(yaml)}`;
+    "https://github.com/mzhc13/CAKEbox/issues/new"
+    + "?labels=tip-submission," + theme
+    + "&title=" + encodeURIComponent(issueTitle)
+    + "&body=" + encodeURIComponent(issueBody);
 
   window.open(url, "_blank");
 }
-
 </script>
