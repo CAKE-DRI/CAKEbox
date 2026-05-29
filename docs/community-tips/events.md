@@ -39,7 +39,7 @@ Add your sprinkles of knowledge below: a quick tip, small insight, or lesson lea
   <p class="submit-helper">
   </br>
   After clicking <strong>Submit</strong>, a GitHub issue will open
-  with your tip pre-filled. Simply click <strong>Create issue</strong>
+  with your tip pre-filled. Simply click <strong>"Create"</strong>
   to send it to the CAKE team for review before it goes live.
 </p>
 

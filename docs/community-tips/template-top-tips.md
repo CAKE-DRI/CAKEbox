@@ -68,8 +68,9 @@ This page is part of our Top Tips campaign — a space to share quick advice, us
   </p>
   
   <p class="submit-helper">
+  </br>
   After clicking <strong>Submit</strong>, a GitHub issue will open
-  with your tip pre-filled. Simply click <strong>Create issue</strong>
+  with your tip pre-filled. Simply click <strong>"Create"</strong>
   to send it to the CAKE team for review before it goes live.
 </p>
 
