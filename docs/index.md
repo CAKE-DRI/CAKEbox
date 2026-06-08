@@ -36,6 +36,9 @@ Here you’ll find:
 
 Browse by theme to find resources, tools, and community contributions.
 
+!!! question "Don't know where to start?"
+    We recommend **[Sprinkles of Knowledge](community-tips/index.md)**, where you can find quick tips, advice, and experiences from our community 🧁
+
 <!-- material/tags {include: [Central themes]} -->
 
 --- 
