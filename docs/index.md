@@ -73,3 +73,11 @@ By using this site, you are agreeing to abide by the **[CAKE Code of Conduct](co
 <script>
   sessionStorage.setItem("cameFromHome", "1");
 </script>
+
+---
+
+## Community Content Disclaimer
+
+CAKEbox is a community-driven knowledge hub. Our community has a great wealth of experience, knowledge and recommendation, and this platform is intended to be a space to share these with the wider UK DRI community. 
+
+Read more about our guidance on how to use this platform **[here](community-content-disclaimer.md)**.
