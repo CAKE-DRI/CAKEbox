@@ -13,3 +13,16 @@ will help identify gaps in existing tools and guide future improvements to the F
 
 ## Resource links
 
+**Unit Testing in Fortran workshop:**
+  
+  - [Lesson material deployed within the Carpentries Incubator](https://carpentries-incubator.github.io/fortran-unit-testing/)
+
+  - [GitHub repository with lesson material and exercises ](https://github.com/carpentries-incubator/fortran-unit-testing)
+
+**pFUnit testing framework:**
+  
+  - [Github repository](https://github.com/Goddard-Fortran-Ecosystem/pFUnit)
+
+  - [Online documentation (likely outdated)](https://pfunit.sourceforge.net/index.html)
+
+
