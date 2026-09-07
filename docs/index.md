@@ -45,7 +45,7 @@ Browse by theme to find resources, tools, and community contributions.
 
 ## Other Hubs
 
-- [Software Sustainability Institute Resources Hub](https://www.software.ac.uk/resource-hub)
+- [Institute for Research Software Resources Hub](https://www.software.ac.uk/resource-hub)
     - Including information ranging from software project management and sustainability to event organisation and online training delivery.
 - [Society of Research Software Engineering Resources](https://society-rse.org/resources/)
     - Ranging from EDIA to remote working to reproducible research     
