@@ -21,4 +21,8 @@ This fellowship aims to introduce members of the DRI community to the container 
 
   - Online documentation - <a href="https://cloud-native-sig.github.io/hpcdays26-pocket-sized-kubernetes/introduction/"> Github Pages </a>
   
-  - GitHub repository -  <a href="https://github.com/cloud-native-sig/hpcdays26-pocket-sized-kubernetes"> HPC Days 2026 </a> 
+  - GitHub repository -  <a href="https://github.com/cloud-native-sig/hpcdays26-pocket-sized-kubernetes"> HPC Days 2026 </a>
+
+**Kubernetes for Research Infrastructure: Core Concepts and Practical Use Cases**
+
+  - Webinar recording - <a href="https://www.youtube.com/watch?v=s6hw7WrLlqk"> ACIT Hub
