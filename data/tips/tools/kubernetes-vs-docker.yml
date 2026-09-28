@@ -1,0 +1,5 @@
+title: Kubernetes vs Docker
+text: '**Docker**: Runs apps from built images in containers, great for sandboxed
+  environments.'
+emoji: 📚
+color: green
