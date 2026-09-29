@@ -1,0 +1,5 @@
+title: 'Pods: The Smallest Deployable Unit in Kubernetes'
+text: A pod is a group of one or more containers that share storage, network, and
+  a specification for how to run the containers.
+emoji: 📱
+color: yellow
