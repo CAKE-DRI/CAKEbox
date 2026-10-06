@@ -3,7 +3,6 @@ title: Submissions & Reviewing
 tags: [Central themes, Submissions & Reviewing]
 ---
 
-
 Preparing funding applications and conference submissions is a vital part of the computational science community’s workflow around knowledge exchange. These processes provide opportunities to showcase our work, learn from others, strengthen collaborations, and secure funding to continue doing the work we love.
 
 Reviewing is essential to support these processes. By acting as a reviewer, you contribute to maintaining quality, fairness and integrity within the community. Reviewing also provides valuable insight into what makes a strong submission and can strengthen your own applications.
@@ -35,25 +34,8 @@ Resources that provide guidance on:
 
 ---
 
-## What is not included?
-
-- Translating research for broader audiences. See **[Communications and Outreach](../communications-and-outreach/index.md)**. 
-- Building and sustaining collaborations, which often strengthen applications. See **[Collaborations and Community Building](../collaboration-and-community-building/index.md)**
-
----
-
 ## Resources 
 
 <!-- material/tags {include: [Submissions & Reviewing]} -->
 
 * [UKRI's 12 top tips for writing a grant application](https://www.ukri.org/blog/12-top-tips-for-writing-a-grant-application/) 
-
-<!-- 
-To be included: 
-- How to find funding opportunities
-- How to write a funding application
-- How to review
-- Examples of submissions 
-- How to prepare a conference submission -->
-
-

@@ -6,24 +6,15 @@ tags: [Central themes, EDIA]
 
 Equality, Diversity, Inclusion and Accessibility (EDIA) is fundamental to building a community where everyone feels welcomed, included and like they can contribute meaningfully. 
 
-This theme brings together guidance, examples of good practice, and community-led resources that support inclusive knowledge exchange across the CAKE network. It also highlights opportunities for learning and continuous improvement.
-
 **The [CAKE-CoSeC EDI Working Group](CAKE-CoSeC-EDI-WG/index.md) supports this work by developing practical guidance and identifying priority areas for action.**
 
-## What is included? 
-
-EDIA resources that support:
+This theme brings together guidance, examples of good practice, and community-led resources. For example:
 
 - Inclusive event logistics
 - Accessible communication practices  
 - Inclusive recruitment and participation  
 - Checklists, toolkits and reflection resources  
 - Signposts to trusted external guidance  
-
-
-<!-- ## What is not included? 
-
-Practical delivery, communications, and guidance on how to undertake knowledge exchange are covered within the other themes. -->
 
 ## Resources
 

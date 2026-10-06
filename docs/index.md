@@ -10,7 +10,7 @@ tags:
 <h1 align="center">Welcome to CAKEbox 🍰📦</h1>
 
 <p align="center">
-  A community knowledge hub for the UK Digital Research Infrastructure (DRI) community
+  A community knowledge hub for the UK Digital Research Infrastructure (DRI) community, maintained by <a href="https://www.cake.ac.uk"> CAKE</a>
 </p>
 
 ---
@@ -19,7 +19,7 @@ tags:
 
 CAKEbox is a shared space for practical knowledge from across the UK DRI community.
 
-Here you’ll find:
+Here you can find and contribute:
 
 - Guidance and how-tos  
 - Templates and reusable materials  

@@ -53,12 +53,16 @@ Click on a theme and add your post-it. It doesn’t need to be polished or perfe
 !!! question "Have something else to share?"
     Struggling to place your contribution? Get in touch and we can help or create a new theme. Contact the CAKE team on [Slack](https://join.slack.com/t/cake-dri/shared_invite/zt-3w3ymqha8-SnreNHd4W3V8pBEwsfZrxA) or via email at [cake@jiscmail.ac.uk](cake@jiscmail.ac.uk). 
 
+---
+
 ### Inspiration 
 
 * What’s one thing you wish you knew earlier?
 * What’s a small thing that made a big difference?
 * What advice would you give someone new to this?
 * What mistake helped you learn something useful?
+
+---
 
 ### Code of Conduct
 
