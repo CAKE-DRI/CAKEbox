@@ -3,3 +3,4 @@ text: A pod is a group of one or more containers that share storage, network, an
   a specification for how to run the containers.
 emoji: 📱
 color: yellow
+theme: tools

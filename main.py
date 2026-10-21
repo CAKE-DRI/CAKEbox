@@ -21,4 +21,17 @@ def define_env(env):
 
         return all_tips
 
+    def get_themes():
+            folder = Path("data/tips")
+
+            if not folder.exists():
+                return []
+
+            return sorted(
+                directory.name
+                for directory in folder.iterdir()
+                if directory.is_dir()
+            )
+
     env.variables["tips"] = load_tips
+    env.variables["themes"] = get_themes

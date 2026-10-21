@@ -3,3 +3,4 @@ text: '**Docker**: Runs apps from built images in containers, great for sandboxe
   environments.'
 emoji: 📚
 color: green
+theme: tools

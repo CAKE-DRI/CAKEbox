@@ -20,11 +20,37 @@ The most helpful ideas are often simple: a practical tip, something that worked,
 
 Browse our sprinkles by the themes below or share your own. *Curated by the [CAKE team](https://www.cake.ac.uk/about/who-are-we).*
 
+## Explore by theme
+
+Looking for something specific? Choose a theme and/or keyword to filter the resources and community tips below.
+
+<div class="resources-filter">
+
+  <label for="theme-filter"><b>Filter by theme:</b></label>
+
+  <select
+    id="theme-filter"
+    class="tip-input"
+    onchange="filterResources()"
+  >
+    <option value="">All themes</option>
+
+    {% for theme in themes() %}
+      <option value="{{ theme }}">
+        {{ theme }}
+      </option>
+    {% endfor %}
+  </select>
+
+</div>
 
 <div class="sticky-board">
   {% for tip in tips() %}
 
-<div class="sticky-note {{ tip.color }}">
+<div class="sticky-note {{ tip.color }}"
+  data-theme="{{ tip.theme }}"
+  >
+
   <div class="note-title">
     {{ tip.emoji }} {{ tip.title }}
   </div>
@@ -38,32 +64,6 @@ Browse our sprinkles by the themes below or share your own. *Curated by the [CAK
 
 </div>
 
-
-<!-- <div class="tip-theme-grid">
-
-{% set themes = [
-  {"name": "Events", "tag": "events", "icon": "🎤", "desc": "Workshops, conferences and hybrid meetings."},
-  {"name": "Collaboration", "tag": "collaboration", "icon": "🤝", "desc": "Working together across teams and disciplines."},
-  {"name": "Inclusion", "tag": "inclusion", "icon": "🌍", "desc": "Accessibility and inclusive community practices."},
-  {"name": "Tools & Workflows", "tag": "tools", "icon": "🧠", "desc": "The right tools for the right job."}
-] %}
-
-{% for theme in themes %}
-
-<a class="tip-theme-card" href="../community-tips/{{ theme.tag }}/">
-<div class="tip-theme-icon">{{ theme.icon }}</div>
-<div class="tip-theme-content">
-<h3>{{ theme.name }}</h3>
-<p>{{ theme.desc }}</p>
-</div>
-
-<div class="tip-theme-arrow">→</div>
-
-</a>
-
-{% endfor %}
-
-</div> -->
 
 ## Contributing
 
@@ -231,4 +231,25 @@ text: ${text}`;
   }, 1600);
 
 })();
+</script>
+
+
+
+<!-- Add functionality to filter the stickys via theme -->
+<script>
+
+
+function filterResources() {
+  const selectedTheme =
+    document.getElementById("theme-filter").value;
+
+  document.querySelectorAll(".sticky-note").forEach(item => {
+      const primaryTheme = item.dataset.theme;
+
+      const matchesTheme =
+        !selectedTheme || primaryTheme === selectedTheme;
+
+        item.style.display = matchesTheme ? "" : "none";
+    });
+}
 </script>
