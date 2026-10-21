@@ -5,7 +5,7 @@ def define_env(env):
 
     def load_tips(theme=None):
 
-        folder = Path(f"data/tips/{theme}") if theme else Path("data/tips")
+        folder = Path(f"data/{theme}") if theme else Path("data")
 
         if not folder.exists():
             return []
@@ -22,7 +22,7 @@ def define_env(env):
         return all_tips
 
     def get_themes():
-            folder = Path("data/tips")
+            folder = Path("data")
 
             if not folder.exists():
                 return []

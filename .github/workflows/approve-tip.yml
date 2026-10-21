@@ -46,7 +46,7 @@ jobs:
           emoji = get("emoji")
           color = get("color")
 
-          folder = Path(f"data/tips/{theme}")
+          folder = Path(f"data/{theme}")
           folder.mkdir(parents=True, exist_ok=True)
 
           slug = title.lower().replace(" ", "-")
@@ -57,6 +57,7 @@ jobs:
               "text": text,
               "emoji": emoji,
               "color": color
+              "theme": theme
           }
 
           file_path.write_text(
