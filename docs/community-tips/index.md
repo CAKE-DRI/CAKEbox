@@ -27,19 +27,27 @@ Looking for something specific? Choose a theme and/or keyword to filter the reso
 <div class="resources-filter">
 
   <label for="theme-filter"><b>Filter by theme:</b></label>
-
   <select
     id="theme-filter"
     class="tip-input"
-    onchange="filterResources()"
+    onchange="updateKeywordFilter(); filterResources()"
   >
     <option value="">All themes</option>
-
     {% for theme in themes() %}
       <option value="{{ theme }}">
         {{ theme }}
       </option>
     {% endfor %}
+  </select>
+
+  <label for="keyword-filter"><b>Optionally, also choose another keyword:</b></label>
+  <select
+    id="keyword-filter"
+    class="tip-input"
+    onchange="filterResources()"
+    disabled
+  >
+    <option value="">All keywords</option>
   </select>
 
 </div>
@@ -49,6 +57,7 @@ Looking for something specific? Choose a theme and/or keyword to filter the reso
 
 <div class="sticky-note {{ tip.color }}"
   data-theme="{{ tip.theme }}"
+  data-keywords="{{ tip.keywords | join(',') }}"
   >
 
   <div class="note-title">
@@ -140,6 +149,43 @@ We ask contributors to:
       </option>
     {% endfor %}
   </select>
+
+<div class="keyword-picker">
+  <div class="keyword-label">
+    Select additional keyword(s) <span>(optional)</span>
+  </div>
+
+<div class="keyword-grid">
+  {% for keyword in keywords() %}
+    <label class="keyword-option">
+      <input
+        type="checkbox"
+        name="keywords"
+        value="{{ keyword }}"
+      >
+      <span>{{ keyword }}</span>
+    </label>
+  {% endfor %}
+
+    <label class="keyword-option custom-keyword-option">
+      <input
+        type="checkbox"
+        name="keywords"
+        value="__other__"
+        onchange="toggleCustomKeyword('tip', this)"
+      >
+      <span>Other</span>
+    </label>
+  </div>
+
+  <input
+    type="text"
+    id="tip-custom-keyword"
+    class="tip-input"
+    placeholder="Enter a custom keyword"
+    style="display: none;"
+  >
+</div>
 
 <div class="emoji-picker">
   <p class="emoji-label">
@@ -251,6 +297,81 @@ document.querySelectorAll(".colour-btn").forEach(btn => {
 
 </script>
 
+<!-- Allow the input of a custom keyword -->
+<script>
+function toggleCustomKeyword(type, checkbox) {
+  const input = document.getElementById(
+    type + "-custom-keyword"
+  );
+
+  if (!input || !checkbox) return;
+
+  input.style.display = checkbox.checked
+    ? "block"
+    : "none";
+
+  if (!checkbox.checked) {
+    input.value = "";
+  }
+}
+</script>
+
+<!-- Both themes and keywords can be selected as keywords. So, remove the selected theme from the keywords -->
+<script>
+function updateTipkeywords() {
+  const selectedTheme =
+    document.getElementById("tip-theme").value;
+
+  document.querySelectorAll(
+    ".keyword-picker .keyword-option"
+  ).forEach(option => {
+    const checkbox = option.querySelector("input");
+
+    // Keep the custom keyword option visible
+    if (checkbox.value === "__other__") return;
+
+    const isPrimaryTheme =
+      option.dataset.theme === selectedTheme;
+
+    option.style.display = isPrimaryTheme ? "none" : "";
+
+    if (isPrimaryTheme) {
+      checkbox.checked = false;
+    }
+  });
+}
+</script>
+
+<!-- You can select multiple keywords, this function retrieves everything that was selected -->
+<script>
+function getSelectedTipKeywords() {
+  const keywords = Array.from(
+    document.querySelectorAll(
+      '#tip-submit-box .keyword-picker input[name="keywords"]:checked'
+    )  
+  )
+    .map(checkbox => checkbox.value)
+    .filter(keyword => keyword !== "__other__");
+
+  const customKeyword = document
+    .getElementById("tip-custom-keyword")
+    .value.trim();
+
+  if (customKeyword) {
+    keywords.push(customKeyword);
+  }
+
+  // Remove duplicates, ignoring case
+  return [...new Map(
+    keywords.map(keyword => [
+      keyword.toLowerCase(),
+      keyword
+    ])
+  ).values()];
+}
+</script>
+
+
 <script>
 function submitTip() {
 
@@ -266,10 +387,21 @@ function submitTip() {
   const theme = 
     document.getElementById("tip-theme").value;
 
+  const keywords = getSelectedTipKeywords();
+
   const color =
     document
     .querySelector(".colour-btn.active")
     .dataset.colour;
+
+  if (
+      title.includes(":") ||
+      text.includes(":") ||
+      keywords.some(keyword => keyword.includes(":"))
+    ) {
+    alert("Only the URL can contain a colon (:).");
+    return;
+  }
 
   if (!title || !text || !theme) {
     alert("Please fill in all fields.");
@@ -284,7 +416,9 @@ function submitTip() {
 emoji: ${emoji}
 color: ${color}
 text: ${text}
-theme: ${theme}`; 
+theme: ${theme}
+${keywords.length > 0 ? `keywords:
+${keywords.map(keyword => `  - ${keyword}`).join("\n")}` : ""}`;
 
   const url =
     "https://github.com/eleanor-broadway/CAKEbox/issues/new"
@@ -361,19 +495,90 @@ theme: ${theme}`;
 
 <!-- Add functionality to filter the stickys via theme -->
 <script>
+function updateKeywordFilter() {
+  const selectedTheme =
+    document.getElementById("theme-filter").value;
 
+  const keywordFilter =
+    document.getElementById("keyword-filter");
+
+  // Remember the current keyword, if possible
+  const previousKeyword = keywordFilter.value;
+
+  // Reset the dropdown
+  keywordFilter.innerHTML =
+    '<option value="">All keywords</option>';
+
+  // Require a theme before selecting a keyword
+  keywordFilter.disabled = !selectedTheme;
+
+  if (!selectedTheme) {
+    return;
+  }
+
+  // Collect keywords belonging to the selected theme
+  const keywords = new Set();
+
+  document.querySelectorAll(
+    ".sticky-note"
+  ).forEach(item => {
+    if (item.dataset.theme !== selectedTheme) {
+      return;
+    }
+
+    const itemKeywords = item.dataset.keywords
+      ? item.dataset.keywords.split(",")
+      : [];
+
+    itemKeywords.forEach(keyword => {
+      const cleanedKeyword = keyword.trim();
+
+      if (cleanedKeyword) {
+        keywords.add(cleanedKeyword);
+      }
+    });
+  });
+
+  // Populate the dropdown alphabetically
+  [...keywords].sort().forEach(keyword => {
+    const option = document.createElement("option");
+    option.value = keyword;
+    option.textContent = keyword;
+    keywordFilter.appendChild(option);
+  });
+
+  // Preserve the selection if it's still available
+  if (keywords.has(previousKeyword)) {
+    keywordFilter.value = previousKeyword;
+  }
+}
 
 function filterResources() {
   const selectedTheme =
     document.getElementById("theme-filter").value;
 
-  document.querySelectorAll(".sticky-note").forEach(item => {
-      const primaryTheme = item.dataset.theme;
+  // Refresh available keywords when the theme changes
+  updateKeywordFilter();
 
-      const matchesTheme =
-        !selectedTheme || primaryTheme === selectedTheme;
+  const selectedKeyword =
+    document.getElementById("keyword-filter").value;
 
-        item.style.display = matchesTheme ? "" : "none";
-    });
-}
-</script>
+  document.querySelectorAll(
+    ".resource-box, .sticky-note"
+  ).forEach(item => {
+    const primaryTheme = item.dataset.theme;
+
+    const keywords = item.dataset.keywords
+      ? item.dataset.keywords.split(",").map(k => k.trim())
+      : [];
+
+    const matchesTheme =
+      !selectedTheme || primaryTheme === selectedTheme;
+
+    const matchesKeyword =
+      !selectedKeyword || keywords.includes(selectedKeyword);
+
+    item.style.display =
+      matchesTheme && matchesKeyword ? "" : "none";
+  });
+}</script>
