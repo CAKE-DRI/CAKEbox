@@ -3,16 +3,16 @@ from pathlib import Path
 
 def define_env(env):
 
-    def load_tips(theme):
+    def load_tips(theme=None):
 
-        folder = Path(f"data/tips/{theme}")
+        folder = Path(f"data/tips/{theme}") if theme else Path("data/tips")
 
         if not folder.exists():
             return []
 
         all_tips = []
 
-        for file in sorted(folder.glob("*.yml")):
+        for file in sorted(folder.rglob("*.yml")):
 
             data = yaml.safe_load(file.read_text(encoding="utf-8"))
 

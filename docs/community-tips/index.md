@@ -20,7 +20,26 @@ The most helpful ideas are often simple: a practical tip, something that worked,
 
 Browse our sprinkles by the themes below or share your own. *Curated by the [CAKE team](https://www.cake.ac.uk/about/who-are-we).*
 
-<div class="tip-theme-grid">
+
+<div class="sticky-board">
+  {% for tip in tips() %}
+
+<div class="sticky-note {{ tip.color }}">
+  <div class="note-title">
+    {{ tip.emoji }} {{ tip.title }}
+  </div>
+
+  <div class="note-text">
+    {{ tip.text }}
+  </div>
+</div>
+
+{% endfor %}
+
+</div>
+
+
+<!-- <div class="tip-theme-grid">
 
 {% set themes = [
   {"name": "Events", "tag": "events", "icon": "🎤", "desc": "Workshops, conferences and hybrid meetings."},
@@ -44,7 +63,7 @@ Browse our sprinkles by the themes below or share your own. *Curated by the [CAK
 
 {% endfor %}
 
-</div>
+</div> -->
 
 ## Contributing
 
@@ -75,24 +94,6 @@ We ask contributors to:
 * Gracefully accept constructive criticism
 * Focus on what is best for the community
 * Show courtesy and respect towards others
-
-<div class="sticky-board">
-
-{% for tip in tips("template") %}
-
-<div class="sticky-note {{ tip.color }}">
-  <div class="note-title">
-    {{ tip.emoji }} {{ tip.title }}
-  </div>
-
-  <div class="note-text">
-    {{ tip.text }}
-  </div>
-</div>
-
-{% endfor %}
-
-</div>
 
 
 <script>
