@@ -56,7 +56,7 @@ jobs:
               "title": title,
               "text": text,
               "emoji": emoji,
-              "color": color
+              "color": color,
               "theme": theme
           }
 
