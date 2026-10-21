@@ -1,3 +1,4 @@
+type: tip
 title: Personas and User Stories
 text: In software engineering, personas and user stories are used to make sure software
   meets the requirements for the target user group. Use this idea when planning an
@@ -7,3 +8,8 @@ text: In software engineering, personas and user stories are used to make sure s
 emoji: 📝
 color: blue
 theme: engagement-and-participation
+keywords: 
+  - outreach-and-advocacy
+  - recruitment
+  - events
+  - inclusion

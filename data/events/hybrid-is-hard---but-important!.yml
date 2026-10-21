@@ -1,3 +1,4 @@
+type: tip
 title: Hybrid is hard - but important!
 text: People are reluctant about hybrid events as they mean additional work, and sometimes
   costs. But people might not be able to travel to an event because of caring responsibilities,
@@ -6,3 +7,7 @@ text: People are reluctant about hybrid events as they mean additional work, and
 emoji: ✨
 color: green
 theme: events
+keywords: 
+  - outreach-and-advocacy
+  - engagement-and-participation
+  - inclusion

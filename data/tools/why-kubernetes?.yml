@@ -1,5 +1,8 @@
+type: tip
 title: Why Kubernetes?
 text: '**Availability** – Kubernetes spreads containers across nodes.'
 emoji: ✨
 color: pink
-theme: tools
+theme: tools 
+keywords: 
+  - kubernetes
