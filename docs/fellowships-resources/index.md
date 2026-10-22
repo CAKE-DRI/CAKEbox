@@ -1,6 +1,6 @@
 ---
 title: Fellowship resources
-tags: [Central themes, Fellowship resources]
+tags: [Key Themes]
 ---
 
 This area represents the resources produced and shared as part of the CAKE Fellowships. These fellowships cover a range of topics and methods, but CAKEbox has been used to host a single location that shared resources can be found. Please feel free to browse the links below for content created by each of our fellows 

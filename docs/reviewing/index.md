@@ -1,36 +1,13 @@
 ---
-title: Submissions & Reviewing
-tags: [Central themes, Submissions & Reviewing]
+title: CAKE Review Committee
+tags: [Working Groups]
 ---
+<!-- ## CAKE Review Committee -->
 
-Preparing funding applications and conference submissions is a vital part of the computational science community’s workflow around knowledge exchange. These processes provide opportunities to showcase our work, learn from others, strengthen collaborations, and secure funding to continue doing the work we love.
+The CAKE Review Committee is responsible for providing fair, respectful and constructive reviews to ensure CAKE funds are allocated appropriately and transparently. By acting as a reviewer, you contribute to maintaining quality, fairness and integrity within the community. Reviewing also provides valuable insight into what makes a strong submission and can strengthen your own applications
 
-Reviewing is essential to support these processes. By acting as a reviewer, you contribute to maintaining quality, fairness and integrity within the community. Reviewing also provides valuable insight into what makes a strong submission and can strengthen your own applications.
-
----
-
-## CAKE Review Committee
-
-The CAKE Review Committee is responsible for providing fair, respectful and constructive reviews to ensure CAKE funds are allocated appropriately and transparently.
-
-Interested in getting involved? 
-
-* Read our [Terms of Reference here](reviewer-terms-of-reference.md). 
-* **[Apply here.](https://www.cake.ac.uk/about/reviewers/)**
-
-
----
-
-## What is included?
-
-Resources that provide guidance on: 
-
-- Identifying and preparing funding applications  
-- Writing strong funding proposals  
-- Preparing conference abstracts and submissions  
-- Examples of successful submissions  
-- Best practice in peer review  
-- Guidance and documentation for the CAKE Review Committee  
+!!! question "Interested in getting involved?"
+    **[Apply here.](https://www.cake.ac.uk/about/reviewers/)**
 
 ---
 
@@ -38,4 +15,6 @@ Resources that provide guidance on:
 
 <!-- material/tags {include: [Submissions & Reviewing]} -->
 
-* [UKRI's 12 top tips for writing a grant application](https://www.ukri.org/blog/12-top-tips-for-writing-a-grant-application/) 
+<!-- ### Info: 
+
+Preparing funding applications and conference submissions is a vital part of the computational science community’s workflow around knowledge exchange. These processes provide opportunities to showcase our work, learn from others, strengthen collaborations, and secure funding to continue doing the work we love. -->

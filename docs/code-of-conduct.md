@@ -1,6 +1,6 @@
 ---
 title: Code of Conduct
-tags: [EDIA]
+tags: 
 ---
 
 !!! Note

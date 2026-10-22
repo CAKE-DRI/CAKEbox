@@ -1,6 +1,6 @@
 ---
 title: CAKE-CoSeC EDI Working Group
-tags: [EDIA]
+tags: [Working Groups]
 ---
 
 Welcome to the page for the CAKE-CoSeC Equality, Diversity, and Inclusion (EDI) Working Group. 

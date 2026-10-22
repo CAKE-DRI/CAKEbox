@@ -12,9 +12,10 @@ extra:
       link: https://join.slack.com/t/cake-dri/shared_invite/zt-3b6dgtkfp-kDnlCOXOl9QJrg0L7tVKNw
 
 nav:
-  - Welcome and Explore: index.md
-  - How to Contribute: how-to-contribute/index.md
+  - Home: index.md
   - All Resources: all.md 
+  - Sprinkles of Knowledge: resources/community-tips.md
+  - Contributing: how-to-contribute/index.md
 
 theme:
   name: material

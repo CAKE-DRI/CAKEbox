@@ -1,6 +1,6 @@
 ---
 title: Virtual Placements
-tags: [Collaboration & Community Building, CAKE Placements & Visits]
+tags: [Placements & Visits]
 ---
 
 # Virtual Placements

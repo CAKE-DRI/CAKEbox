@@ -1,6 +1,6 @@
 ---
 title: Best Practice Guidance for Successful CAKE Placements & Visits
-tags: [Collaboration & Community Building, CAKE Placements & Visits]
+tags: [Placements & Visits]
 ---
 
 # Best Practice Guidance for Successful CAKE Placements & Visits
