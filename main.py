@@ -16,10 +16,26 @@ def define_env(env):
 
             data = yaml.safe_load(file.read_text(encoding="utf-8"))
 
-            if data:
+            if data and data.get("type") == "tip":
                 all_tips.append(data)
 
         return all_tips
+
+    def load_resources(theme=None):
+        folder = Path(f"data/{theme}") if theme else Path("data")
+
+        if not folder.exists():
+            return []
+
+        all_resources = []
+
+        for file in sorted(folder.rglob("*.yml")):
+            data = yaml.safe_load(file.read_text(encoding="utf-8"))
+
+            if data and data.get("type") == "resource":
+                all_resources.append(data)
+
+        return all_resources
 
     def get_themes():
             folder = Path("data")
@@ -60,5 +76,6 @@ def define_env(env):
             return sorted(all_keywords, key=str.casefold)
 
     env.variables["tips"] = load_tips
+    env.variables["resources"] = load_resources
     env.variables["themes"] = get_themes
     env.variables["keywords"] = get_keywords

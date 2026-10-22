@@ -50,6 +50,7 @@ extra_css:
   - stylesheets/cake.css
   - stylesheets/top-tips.css
   - stylesheets/sprinkles.css
+  - stylesheets/resources.css
 
 
 plugins:
