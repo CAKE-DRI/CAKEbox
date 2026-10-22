@@ -1,0 +1,8 @@
+type: resource
+title: The Turing Way
+url: https://book.the-turing-way.org/
+comment: Welcome to The Turing Way handbook to reproducible, ethical and collaborative data science.
+theme: community-building
+keywords: 
+- tools
+- collaboration

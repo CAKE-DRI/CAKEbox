@@ -59,12 +59,14 @@ jobs:
 
               return values
 
+          type = get("type")
           theme = get("theme")
           title = get("title")
           text = get("text")
           emoji = get("emoji")
           color = get("color")
           keywords = get_list("keywords")
+
 
           folder = Path(f"data/{theme}")
           folder.mkdir(parents=True, exist_ok=True)
@@ -73,15 +75,17 @@ jobs:
           file_path = folder / f"{slug}.yml"
 
           data = {
+              "type": type, 
               "title": title,
               "text": text,
               "emoji": emoji,
               "color": color,
               "theme": theme
           }
-
+          
           if keywords:
               data["keywords"] = keywords
+
 
           file_path.write_text(
               yaml.dump(data, sort_keys=False, allow_unicode=True),
