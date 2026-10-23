@@ -20,7 +20,7 @@ Looking for something specific? Choose a theme and/or keyword to filter the reso
   <select
     id="theme-filter"
     class="tip-input"
-    onchange="updateKeywordFilter(); updateExcludeKeywordFilter(); filterResources()"
+    onchange="filterResources()"
   >
     <option value="">All themes</option>
     {% for theme in themes() %}
