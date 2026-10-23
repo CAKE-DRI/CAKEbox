@@ -19,4 +19,4 @@ All submissions are treated with care and respect.
 
 !!! question "Need help?" 
 
-    [Learn how to submit here.](../..//how-to-contribute/index.md)
+    [Learn how to submit here.](/how-to-contribute/index.md)

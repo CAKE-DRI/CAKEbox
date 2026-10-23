@@ -94,10 +94,10 @@ Sometimes collaborations do not succeed in the way we expected but they can stil
 
 ### Sprinkles of Knowledge 
 
-This session inspired the [Sprinkles of Knowledge](../community-tips/index.md)! 
+This session inspired the [Sprinkles of Knowledge](/community-tips.md)! 
 
 We wanted to share the great discussion we had during this session, but felt we didn't have a representative portion of the community to write a definitive guide on successful collaborations. So, Sprinkles of Knowledge is a lightweight way for everyone to share their tips and advice, in quick form, without needing to write a full guide. Removing the barrier to sharing your experiences. 
 
 The most helpful ideas are often simple: a practical tip, something that worked, a mistake to avoid, or a small insight from experience.
 
-Have a collaboration lesson to share? Add your own [Sprinkles of Knowledge](../community-tips/index.md) and help us build a community resource of practical experiences.
+Have a collaboration lesson to share? Add your own [Sprinkles of Knowledge](/community-tips.md) and help us build a community resource of practical experiences.

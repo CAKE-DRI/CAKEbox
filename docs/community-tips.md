@@ -102,13 +102,13 @@ Use the submission below to add your post-it. It doesn’t need to be polished o
 * What mistake helped you learn something useful?
 
 !!! question "Have something else to share?"
-    Check out our [Contributing Guide](/CAKEbox/docs/how-to-contribute/index.md) for ways to add other types of resources  
+    Check out our [Contributing Guide](/how-to-contribute/index.md) for ways to add other types of resources  
 
 ---
 
 ### Code of Conduct
 
-Please read our [Code of Conduct](../code-of-conduct.md). 
+Please read our [Code of Conduct](code-of-conduct.md). 
 
 We ask contributors to:
 

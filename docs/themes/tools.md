@@ -100,7 +100,7 @@ Browse all resources under the theme of **Tools & Workflows** below, or filter v
 [Explore all resources here.](../all.md)
 
 !!! question "Have something to share?"
-    Check out our [Contributing Guide](/how-to-contribute/) for our quick and easy ways to add your own resources.  
+    Check out our [Contributing Guide](/how-to-contribute/index.md) for our quick and easy ways to add your own resources.  
 
 
 <!-- Optional keyword filter for resources and sticky notes -->

@@ -56,7 +56,7 @@ tags:
 
 CAKEbox is built by the community, for the community. Share what you know! 
 
-👉 **[Learn how to contribute](how-to-contribute/index.md)**
+👉 **[Learn how to contribute](/how-to-contribute/index.md)**
 
 Choose how you’d like to contribute:
 

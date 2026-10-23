@@ -391,12 +391,12 @@ Found a useful website, tool, guide, or other resource? Share the link and tell 
 
 ### Something else?
 
-Have another idea for contributing to CAKEbox? Find out how you can get involved [here](/how-to-contribute/). 
+Have another idea for contributing to CAKEbox? Find out how you can get involved [here](/how-to-contribute/index.md). 
 
 
 ### Code of Conduct
 
-Please read our [Code of Conduct](../code-of-conduct.md). 
+Please read our [Code of Conduct](/code-of-conduct.md). 
 
 We ask contributors to:
 
