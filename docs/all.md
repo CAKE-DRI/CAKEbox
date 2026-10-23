@@ -692,6 +692,16 @@ function submitTip() {
     return;
   }
 
+  if (text.length > 220) {
+    alert("Please only use up to 220 charecters (~ 30 words) for a tip. Need more space? Consider writing a resource!");
+    return;
+  }
+
+  if (title.length > 50) {
+    alert("Please only use up to 50 charecters for a tip title");
+    return;
+  }
+
   if (!title || !text || !theme) {
     alert("Please fill in all fields.");
     return;
