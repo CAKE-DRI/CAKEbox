@@ -549,7 +549,7 @@ ${keywords.length > 0
   : ""}`;
 
   const githubUrl =
-    "https://github.com/eleanor-broadway/CAKEbox/issues/new"
+    "https://github.com/CAKE-DRI/CAKEbox/issues/new"
     + "?labels=resource-submission"
     + "&title=" + encodeURIComponent(issueTitle)
     + "&body=" + encodeURIComponent(issueBody);
@@ -721,7 +721,7 @@ ${keywords.length > 0 ? `keywords:
 ${keywords.map(keyword => `  - ${keyword}`).join("\n")}` : ""}`;
 
   const url =
-    "https://github.com/eleanor-broadway/CAKEbox/issues/new"
+    "https://github.com/CAKE-DRI/CAKEbox/issues/new"
     + "?labels=tip-submission"
     + "&title=" + encodeURIComponent(issueTitle)
     + "&body=" + encodeURIComponent(issueBody);
