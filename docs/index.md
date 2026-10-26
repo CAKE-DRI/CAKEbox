@@ -17,7 +17,9 @@ tags:
 
 <!-- ## Browse  -->
 
-**CAKEBox is a space for sharing practical knowledge from across the UK DRI community. Browse by theme to find resources, tools, and community contributions.**
+**CAKEBox is a space for sharing practical knowledge from across the UK DRI community.** 
+
+Explore all resources at once, or browse by theme to discover useful resources, tools, and community contributions.
 
 <!-- material/tags {include: [Key Themes]} -->
 

@@ -9,7 +9,7 @@ The [CAKE-CoSeC EDI Working Group](CAKE-CoSeC-EDI-WG/index.md) supports this wor
 
 <!-- Enable filtering for keywords, theme is fixed -->
 <div class="resources-filter">
-  <label for="keyword-filter"><b>Filter by keyword:</b></label>
+  <label for="keyword-filter"><b>Include a keyword:</b></label>
   <select
     id="keyword-filter"
     class="tip-input"
@@ -139,9 +139,9 @@ function updateKeywordFilter() {
     itemKeywords.forEach(keyword => {
       const cleanedKeyword = keyword.trim();
 
-      if (cleanedKeyword) {
+      if (cleanedKeyword && cleanedKeyword.toLowerCase() !== "inclusion") {
         keywords.add(cleanedKeyword);
-      }
+      }    
     });
   });
 
@@ -182,7 +182,7 @@ excludeFilter.innerHTML =
     itemKeywords.forEach(keyword => {
       const cleanedKeyword = keyword.trim();
 
-      if (cleanedKeyword) {
+      if (cleanedKeyword && cleanedKeyword.toLowerCase() !== "inclusion") {
         keywords.add(cleanedKeyword);
       }
     });

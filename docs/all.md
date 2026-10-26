@@ -12,11 +12,13 @@ Discover useful resources, practical advice, and lessons learned from across the
 
 ## Explore by theme
 
-Looking for something specific? Choose a theme and/or keyword to filter the resources and community tips below.
+Looking for something specific? All of our resources are organised by a **primary theme** and may also be tagged with additional keywords to describe its content. 
+
+Select a theme to explore its resources and sprinkles, then use the keyword filters to include or exclude specific keywords and narrow your results.
 
 <div class="resources-filter">
 
-  <label for="theme-filter"><b>Filter by theme:</b></label>
+  <label for="theme-filter"><b>Select a theme:</b></label>
   <select
     id="theme-filter"
     class="tip-input"
@@ -30,7 +32,7 @@ Looking for something specific? Choose a theme and/or keyword to filter the reso
     {% endfor %}
   </select>
 
-  <label for="keyword-filter"><b>Filter by keyword:</b></label>
+  <label for="keyword-filter"><b>Include a keyword:</b></label>
   <select
     id="keyword-filter"
     class="tip-input"

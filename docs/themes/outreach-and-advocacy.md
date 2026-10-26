@@ -14,7 +14,7 @@ Browse all resources under the theme of **outreach and advocacy** below, or filt
 
 <!-- Enable filtering for keywords, theme is fixed -->
 <div class="resources-filter">
-  <label for="keyword-filter"><b>Filter by keyword:</b></label>
+  <label for="keyword-filter"><b>Include a keyword:</b></label>
   <select
     id="keyword-filter"
     class="tip-input"
@@ -108,22 +108,40 @@ Browse all resources under the theme of **outreach and advocacy** below, or filt
 
 <!-- Optional keyword filter for resources and sticky notes -->
 <script>
+
+const selectedTheme = "outreach-and-advocacy";
+
 function updateKeywordFilter() {
+  // const selectedTheme =
+  //   document.getElementById("theme-filter").value;
+
   const keywordFilter =
     document.getElementById("keyword-filter");
 
+  // Remember the current keyword, if possible
   const previousKeyword = keywordFilter.value;
 
   // Reset the dropdown
   keywordFilter.innerHTML =
     '<option value="">All keywords</option>';
 
-  // Collect keywords
+  // Require a theme before selecting a keyword
+  keywordFilter.disabled = !selectedTheme;
+
+  if (!selectedTheme) {
+    return;
+  }
+
+  // Collect keywords belonging to the selected theme
   const keywords = new Set();
 
   document.querySelectorAll(
     ".resource-box, .sticky-note"
   ).forEach(item => {
+    if (item.dataset.theme !== selectedTheme) {
+      return;
+    }
+
     const itemKeywords = item.dataset.keywords
       ? item.dataset.keywords.split(",")
       : [];
@@ -153,20 +171,35 @@ function updateKeywordFilter() {
 
 
 function updateExcludeKeywordFilter() {
+  // const selectedTheme =
+  //   document.getElementById("theme-filter").value;
+
   const excludeFilter =
     document.getElementById("exclude-keyword-filter");
 
   const previousKeyword = excludeFilter.value;
 
-excludeFilter.innerHTML =
+  // Reset the dropdown
+  excludeFilter.innerHTML =
     '<option value="">All keywords</option>';
 
-  // Collect keywords
+  // Require a theme before selecting a keyword
+  excludeFilter.disabled = !selectedTheme;
+
+  if (!selectedTheme) {
+    return;
+  }
+
+  // Collect keywords belonging to the selected theme
   const keywords = new Set();
 
   document.querySelectorAll(
     ".resource-box, .sticky-note"
   ).forEach(item => {
+    if (item.dataset.theme !== selectedTheme) {
+      return;
+    }
+
     const itemKeywords = item.dataset.keywords
       ? item.dataset.keywords.split(",")
       : [];
@@ -195,6 +228,10 @@ excludeFilter.innerHTML =
 }
 
 function filterResources() {
+  // const selectedTheme =
+  //   document.getElementById("theme-filter").value;
+
+  // Refresh available keywords when the theme changes
   updateKeywordFilter();
   updateExcludeKeywordFilter();
 
@@ -207,6 +244,7 @@ function filterResources() {
   document.querySelectorAll(
     ".resource-box, .sticky-note"
   ).forEach(item => {
+    const primaryTheme = item.dataset.theme;
 
     const keywords = item.dataset.keywords
       ? item.dataset.keywords.split(",").map(k => k.trim())
@@ -215,11 +253,14 @@ function filterResources() {
     const excludesKeyword =
       !excludedKeyword || !keywords.includes(excludedKeyword);
 
+    const matchesTheme =
+      !selectedTheme || primaryTheme === selectedTheme;
+
     const matchesKeyword =
       !selectedKeyword || keywords.includes(selectedKeyword);
 
     item.style.display =
-      matchesKeyword && excludesKeyword
+      matchesTheme && matchesKeyword && excludesKeyword
         ? ""
         : "none";
       });
