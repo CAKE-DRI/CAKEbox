@@ -1,0 +1,6 @@
+type: resource
+title: Ten Tips for using HPC
+url: https://www.archer2.ac.uk/news/2023/11/28/top-10-tips-hpc.html
+comment: Some good to knows to getting started with HPC! Including in-terminal text
+  editors, test jobs, data management plans and training
+theme: tools
