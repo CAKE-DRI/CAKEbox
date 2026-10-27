@@ -1,0 +1,242 @@
+.resources-board {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.resource-box {
+  position: relative;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  margin: 0 0 1rem 0;
+  padding: 1rem 1.25rem;
+
+  border-left: 3px solid #aaa;
+  border-radius: 0 5px 5px 0;
+
+  background: rgba(0, 0, 0, 0.025);
+
+  font-family: inherit;
+}
+
+.resource-box:hover {
+  border-left-color: #666;
+  background: rgba(0, 0, 0, 0.045);
+}
+
+.resource-title {
+  margin-bottom: 0.36rem;
+  /* padding-right: 3rem; */
+  margin-top: 1.4rem; 
+
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.resource-url {
+  margin-bottom: 0.5rem;
+
+  font-size: 0.85rem;
+  line-height: 1.3;
+
+  overflow-wrap: anywhere;
+}
+
+.resource-url a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  opacity: 0.65;
+}
+
+.resource-url a:hover {
+  opacity: 1;
+}
+
+.resource-text {
+  font-size: 0.85rem;
+  line-height: 1.45;
+  opacity: 0.8;
+}
+
+
+/* Resource submission box */
+
+
+/* Resource submission box — match resource output */
+
+.resources-submit-box {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+
+  margin: 2.5rem 0 2rem;
+  padding: 1.5rem 1.25rem;
+
+  border: none;
+  border-left: 3px solid #aaa;
+  border-radius: 0 5px 5px 0;
+
+  background: rgba(0, 0, 0, 0.025);
+  font-family: inherit;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.resources-submit-box:hover {
+  border-left-color: #666;
+  background: rgba(0, 0, 0, 0.045);
+}
+
+.resources-submit-description {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.resources-submit-helper {
+  margin-bottom: 1rem;
+
+  font-size: 0.85rem;
+  line-height: 1.45;
+  opacity: 0.7;
+}
+
+/* Match the resource form fields to the resource card */
+.resources-submit-box input,
+.resources-submit-box textarea,
+.resources-submit-box select,
+.resources-submit-box #resource-theme {
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font-family: inherit;
+}
+
+.resources-submit-box input:focus,
+.resources-submit-box textarea:focus,
+.resources-submit-box select:focus,
+.resources-submit-box #resource-theme:focus {
+  outline: none;
+  border-color: #888;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+}
+
+.resources-submit-description {
+  margin-top: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.resources-submit-helper {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+#resource-theme {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 0.7rem 2.5rem 0.7rem 0.9rem;
+  margin: 0.5rem 0 1rem;
+
+  font-family: inherit;
+  font-size: 0.9rem;
+  line-height: 1.4;
+
+  color: inherit;
+  background-color: #fff;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4l4 4 4-4' fill='none' stroke='%23666' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.9rem center;
+}
+
+#resource-theme:hover {
+  border-color: #999;
+}
+
+#resource-theme:focus {
+  outline: none;
+  border-color: #777;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08);
+}
+
+.theme-badge {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.8rem;
+
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+
+  font-size: 0.65rem;
+  font-weight: 600;
+  line-height: 1.2;
+
+  background: rgba(111, 168, 255, 0.12);
+  color: #3F5E8A;
+
+  border: 1px solid rgba(111, 168, 255, 0.25);
+
+  white-space: nowrap;
+}
+
+.resource-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+
+  margin-top: 0.75rem;
+  padding-top: 0.55rem;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.resource-keyword {
+  padding: 0.15rem 0.4rem;
+
+  border-radius: 999px;
+
+  font-size: 0.6rem;
+  font-weight: 500;
+  line-height: 1.2;
+
+  color: #777;
+  background: rgba(0, 0, 0, 0.035);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+
+  white-space: nowrap;
+}
+
+
+.keyword-picker {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 20px;
+  align-items: start;
+}
+
+.keyword-picker label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

@@ -150,19 +150,61 @@
 
 
 .submit-box {
-
+  position: relative;
   max-width: 700px;
+  box-sizing: border-box;
   gap: 0.2rem;
-  margin-top: 1.5rem;
-  margin-bottom: 5rem;
-  padding: 1.5rem;
+  margin: 2rem 0 5rem;
+  padding: 2rem 1.8rem;
 
-  border-radius: 16px;
-  border: 1px solid rgba(63, 94, 138, 0.35);
-  background: rgba(255,255,255,0.03);
+  background: #F1F8CA;
+  color: #2b2b2b;
+  border: none;
+  border-radius: 2px;
+
+  box-shadow:
+    2px 4px 8px rgba(0, 0, 0, 0.12),
+    0 12px 24px rgba(0, 0, 0, 0.08);
+
+  transform: rotate(-0.6deg);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* Lift the note slightly on hover */
+.submit-box:hover {
+  transform: rotate(0deg) translateY(-3px);
+  box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.15);
+}
 
+/* Slightly more paper-like inputs */
+.submit-box .tip-input,
+.submit-box .tip-textarea,
+.submit-box .tip-select,
+.submit-box #tip-theme {
+  background-color: rgba(255, 255, 255, 0.55);
+  color: #2b2b2b;
+  border: 1px solid rgba(43, 43, 43, 0.2);
+}
+
+.submit-box .tip-input:focus,
+.submit-box .tip-textarea:focus,
+.submit-box .tip-select:focus,
+.submit-box #tip-theme:focus {
+  outline: 2px solid rgba(63, 94, 138, 0.35);
+  outline-offset: 1px;
+}
+
+/* Avoid rotation on small screens */
+@media (max-width: 600px) {
+  .submit-box {
+    transform: none;
+    padding: 1.5rem 1.2rem;
+  }
+
+  .submit-box:hover {
+    transform: translateY(-2px);
+  }
+}
 
 .submit-description {
 
@@ -380,4 +422,55 @@ margin-top: 1rem;
 
     width: 100%;
   }
+}
+
+
+#tip-theme {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 0.7rem 2.5rem 0.7rem 0.9rem;
+  margin: 0.5rem 0 1rem;
+
+  font-family: inherit;
+  font-size: 0.9rem;
+  line-height: 1.4;
+
+  color: inherit;
+  background-color: #fff;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4l4 4 4-4' fill='none' stroke='%23666' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.9rem center;
+}
+
+#tip-theme:hover {
+  border-color: #999;
+}
+
+#tip-theme:focus {
+  outline: none;
+  border-color: #777;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08);
+}
+
+.keyword-picker {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 20px;
+  align-items: start;
+}
+
+.keyword-picker label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
