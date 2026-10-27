@@ -52,7 +52,7 @@ Whichever format you choose, you'll need to add a complementary `.yml` file so t
     ```bash 
     type: resource
     title: "Title of your resource"
-    url: "../../resources/name-of-your-resource/"
+    url: "https://www.cake.ac.uk/CAKEbox/resources/name-of-your-resource/"
     comment: "Tell us a little about the resource"
     theme: theme
     keywords:
