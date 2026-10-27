@@ -1,0 +1,9 @@
+type: tip
+title: Lightweight first
+text: Start with simple solutions (markdown, scripts, templates) before jumping into
+  complex platforms
+emoji: 💬
+color: green
+theme: tools 
+keywords: 
+  - kubernetes

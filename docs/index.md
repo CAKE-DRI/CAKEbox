@@ -15,33 +15,35 @@ tags:
 
 ---
 
-## What is CAKEbox? 
+<!-- ## Browse  -->
 
-CAKEbox is a shared space for practical knowledge from across the UK DRI community.
+**CAKEBox is a space for sharing practical knowledge from across the UK DRI community.** 
 
-Here you can find and contribute:
+Explore all resources at once, or browse by theme to discover useful resources, tools, and community contributions.
 
-- Guidance and how-tos  
-- Templates and reusable materials  
-- Real examples from the community  
-- Lessons learned and best practice  
-- Useful external resources  
-
-
+<!-- material/tags {include: [Key Themes]} -->
 
 ---
 
-
-## Explore 
-
-Browse by theme to find resources, tools, and community contributions.
-
 !!! question "Don't know where to start?"
-    We recommend **[Sprinkles of Knowledge](community-tips/index.md)**, where you can find quick tips, advice, and experiences from our community 🧁
+    We recommend **[Sprinkles of Knowledge](community-tips.md)**, where you can find quick tips, advice, and experiences from our community 🧁
 
-<!-- material/tags {include: [Central themes]} -->
+
+
 
 --- 
+
+<!-- material/tags {include: [Working Groups]} -->
+
+---
+
+<!-- material/tags {include: [Fellowship resources]} -->
+
+---
+
+<!-- material/tags {include: [Placements & Visits]} -->
+
+---
 
 ## Other Hubs
 
@@ -56,7 +58,7 @@ Browse by theme to find resources, tools, and community contributions.
 
 CAKEbox is built by the community, for the community. Share what you know! 
 
-👉 **[Learn how to contribute](how-to-contribute/index.md)**
+👉 **[Learn how to contribute](/how-to-contribute/index.md)**
 
 Choose how you’d like to contribute:
 

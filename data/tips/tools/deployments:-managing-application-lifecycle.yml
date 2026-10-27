@@ -1,5 +1,0 @@
-title: 'Deployments: Managing Application Lifecycle'
-text: A deployment is a Kubernetes object that manages a set of pods and ensures the
-  desired number of replicas are running at all times.
-emoji: 📱
-color: yellow

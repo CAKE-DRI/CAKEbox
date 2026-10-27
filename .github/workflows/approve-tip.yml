@@ -40,24 +40,52 @@ jobs:
                       return line.split(":", 1)[1].strip()
               return ""
 
+          def get_list(field):
+              values = []
+              lines = body.splitlines()
+
+              collecting = False
+
+              for line in lines:
+                  if line.startswith(field + ":"):
+                      collecting = True
+                      continue
+
+                  if collecting:
+                      if line.startswith("  - "):
+                          values.append(line[4:].strip())
+                      else:
+                          break
+
+              return values
+
+          type = get("type")
           theme = get("theme")
           title = get("title")
           text = get("text")
           emoji = get("emoji")
           color = get("color")
+          keywords = get_list("keywords")
 
-          folder = Path(f"data/tips/{theme}")
+
+          folder = Path(f"data/{theme}")
           folder.mkdir(parents=True, exist_ok=True)
 
           slug = title.lower().replace(" ", "-")
           file_path = folder / f"{slug}.yml"
 
           data = {
+              "type": type, 
               "title": title,
               "text": text,
               "emoji": emoji,
-              "color": color
+              "color": color,
+              "theme": theme
           }
+          
+          if keywords:
+              data["keywords"] = keywords
+
 
           file_path.write_text(
               yaml.dump(data, sort_keys=False, allow_unicode=True),

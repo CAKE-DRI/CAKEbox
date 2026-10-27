@@ -1,0 +1,103 @@
+
+name: Approve new resources into YAML
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-yaml:
+    if: github.event.label.name == 'resources-approved'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Parse issue + update file
+        run: |
+          python << 'EOF'
+          import yaml
+          from pathlib import Path
+
+          body = """${{ github.event.issue.body }}"""
+
+          def get(field):
+              for line in body.splitlines():
+                  if line.startswith(field + ":"):
+                      return line.split(":", 1)[1].strip()
+              return ""
+
+          def get_list(field):
+              values = []
+              lines = body.splitlines()
+
+              collecting = False
+
+              for line in lines:
+                  if line.startswith(field + ":"):
+                      collecting = True
+                      continue
+
+                  if collecting:
+                      if line.startswith("  - "):
+                          values.append(line[4:].strip())
+                      else:
+                          break
+
+              return values
+
+          type = get("type")
+          title = get("title")
+          url = get("url")
+          comment = get("comment")
+          theme = get("theme")
+          keywords = get_list("keywords")
+
+
+          folder = Path(f"data/{theme}")
+          folder.mkdir(parents=True, exist_ok=True)
+
+          slug = title.lower().replace(" ", "-")
+          file_path = folder / f"{slug}.yml"
+
+          data = {
+              "type": type,
+              "title": title,
+              "url": url,
+              "comment": comment,
+              "theme": theme
+          }
+
+          if keywords:
+              data["keywords"] = keywords
+
+          file_path.write_text(
+              yaml.dump(data, sort_keys=False, allow_unicode=True),
+              encoding="utf-8"
+          )
+          EOF
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Add approved resource url #${{ github.event.issue.number }}"
+          title: "Add resource #${{ github.event.issue.number }}"
+          body: "Auto-generated PR from approved issue #${{ github.event.issue.number }}"
+          branch: resource-${{ github.event.issue.number }}
+          base: main
+          delete-branch: true
+
