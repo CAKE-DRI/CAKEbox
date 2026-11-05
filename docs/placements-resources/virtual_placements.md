@@ -16,17 +16,17 @@ Virtual placements - while not offering the same complete absorption as an in-pe
 for them to be successful, conscious effort has to be made by the host as well as the (virtual) visitor to give them the same
 priority as an in-person visit.
 
-The [general guidance on best practices for placements and visits](how-to-placement-and-visit.md) still applies to virtual placements.
+The [general guidance on planning placements and visits](planning-a-placement-visit.md) still applies to virtual placements.
 
 ## Example Timeline
 
 ![Timelines for structuring a virtual placement, including breakdown of week and day](../images/virtual_placement_timeline2.png)
 
-The above image shows some example timelines for a virtual placement. Before the placement, some time should be spend to discuss the project
+The above image shows some example timelines for a virtual placement. Before the placement, some time should be spent to discuss the project
 to be worked on, and general working arrangements. It is also useful to already make introductions to the team, and ideally a "buddy" is assigned, i.e., a
 person that the intern can turn to with general questions, and who is checking in for a coffee chat every now and then during the placement.
 
-If possible, it can be  very helpful if the intern visits the project team for a day or two, to establish relationships and see how everyone is working. If that is not
+If possible, it can be very helpful if a short visit can occur, to help establish relationships and see how everyone is working. However, if that is not
 possible, a virtual "shadowing" day can be arranged, where the intern joins one of the team members in their meetings. 
 
 During the placement, a week is started with a catch-up meeting in which the plans for the week are discussed. At the end of the week, a retrospective
